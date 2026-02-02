@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xaba's Cabinetry | Custom Built-In Cabinetry Solutions - Vereeniging, Gauteng</title>
+    <meta name="description" content="Professional custom built-in cabinetry in Vereeniging, Gauteng. 15+ years experience in wardrobes, kitchens, vanities & TV units. Transparent pricing, quality craftsmanship.">
+    <meta name="keywords" content="cabinet maker Gauteng, built-in wardrobes Vereeniging, kitchen cabinets Gauteng, custom cabinetry Vereeniging">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-dark: #1a1a1a;
+            --primary-wood: #8B4513;
+            --accent-orange: #FF6B35;
+            --light-bg: #f8f8f8;
+            --white: #ffffff;
+            --gray: #666666;
+            --light-gray: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--primary-dark);
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-dark);
+            text-decoration: none;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        .logo span {
+            color: var(--accent-orange);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-orange);
+        }
+
+        .cta-nav {
+            background: var(--accent-orange);
+            color: var(--white) !important;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-nav:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('custom-builtin-kitchen.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 2rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            letter-spacing: 3px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--accent-orange);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary-dark);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--gray);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 2px solid var(--light-gray);
+            padding: 2rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 4px;
+            background: var(--accent-orange);
+            transition: left 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            left: 0;
+        }
+
+        .service-card:hover {
+            border-color: var(--accent-orange);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--accent-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: var(--white);
+        }
+
+        .feature-item h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        /* Process Steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step {
+            position: relative;
+            padding: 2rem;
+            background: var(--light-bg);
+            border-left: 4px solid var(--accent-orange);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--accent-orange);
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .step h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            height: 350px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            padding: 2rem 1rem 1rem;
+            color: var(--white);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: var(--light-bg);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial {
+            background: var(--white);
+            padding: 2rem;
+            border-left: 4px solid var(--accent-orange);
+        }
+
+        .stars {
+            color: var(--accent-orange);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--gray);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--light-bg);
+        }
+
+        .contact-item .icon {
+            font-size: 2.5rem;
+            color: var(--accent-orange);
+            margin-bottom: 1rem;
+        }
+
+        .contact-item h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .contact-item a {
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            color: var(--accent-orange);
+        }
+
+        .contact-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 3rem;
+            border: 2px solid var(--light-gray);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--light-gray);
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-orange);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 3rem 2rem 1rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-orange);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            cursor: pointer;
+            z-index: 999;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Page Content Sections */
+        .page-content {
+            display: none;
+        }
+
+        .page-content.active {
+            display: block;
+        }
+
+        /* Page Hero */
+        .page-hero {
+            margin-top: 80px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('built-in-wardrobe (2).JPEG') center/cover;
+            padding: 6rem 2rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .page-hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            letter-spacing: 3px;
+        }
+
+        .page-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Service Detail */
+        .service-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .service-features {
+            list-style: none;
+        }
+
+        .service-features li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--light-gray);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            color: var(--accent-orange);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Pricing Table */
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: 1rem;
+            text-align: left;
+            border: 2px solid var(--light-gray);
+        }
+
+        .pricing-table th {
+            background: var(--primary-dark);
+            color: var(--white);
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .pricing-table tbody tr:hover {
+            background: var(--light-bg);
+        }
+
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border: 2px solid var(--light-gray);
+        }
+
+        .faq-question {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--accent-orange);
+            color: var(--white);
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            display: none;
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Terms */
+        .terms-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .terms-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            letter-spacing: 1px;
+        }
+
+        .terms-content p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        /* Gallery Filter */
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.8rem 1.5rem;
+            background: var(--light-bg);
+            border: 2px solid var(--light-gray);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--accent-orange);
+            color: var(--white);
+            border-color: var(--accent-orange);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .service-detail {
+                grid-template-columns: 1fr;
+            }
+
+            .page-hero h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="logo" onclick="showPage('home')">XABA'S <span>CABINETRY</span></a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a onclick="showPage('home')">Home</a></li>
+                <li><a onclick="showPage('about')">About</a></li>
+                <li><a onclick="showPage('services')">Services</a></li>
+                <li><a onclick="showPage('gallery')">Gallery</a></li>
+                <li><a onclick="showPage('pricing')">Pricing</a></li>
+                <li><a onclick="showPage('process')">Process</a></li>
+                <li><a onclick="showPage('faq')">FAQ</a></li>
+                <li><a onclick="showPage('contact')" class="cta-nav">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page-content active">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>CUSTOM BUILT-IN CABINETRY THAT TRANSFORMS YOUR SPACE</h1>
+                <p>Quality craftsmanship, transparent pricing, professional installation</p>
+                <div class="cta-buttons">
+                    <a class="btn btn-primary" onclick="showPage('gallery')">View Our Work</a>
+                    <a class="btn btn-secondary" onclick="showPage('contact')">Get Your Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">OUR SERVICES</h2>
+                <p class="section-subtitle">Specializing exclusively in custom built-in cabinetry solutions</p>
+                <div class="services-grid">
+                    <div class="service-card" onclick="showPage('wardrobes')">
+                        <div class="service-icon"><i class='fa-solid fa-door-open'></i></div>
+                        <h3>Built-In Wardrobes</h3>
+                        <p>Wall-to-wall, floor-to-ceiling custom fitted wardrobes that maximize your bedroom storage</p>
+                    </div>
+                    <div class="service-card" onclick="showPage('kitchens')">
+                        <div class="service-icon"><i class='fa-solid fa-kitchen-set'></i></div>
+                        <h3>Kitchen Cabinets</h3>
+                        <p>Complete kitchen installations from demolition to final fitting with quality materials</p>
+                    </div>
+                    <div class="service-card" onclick="showPage('vanities')">
+                        <div class="service-icon"><i class='fa-solid fa-shower'></i></div>
+                        <h3>Bathroom Vanities</h3>
+                        <p>Custom fitted bathroom vanities built to withstand moisture and provide essential storage</p>
+                    </div>
+                    <div class="service-card" onclick="showPage('tv-units')">
+                        <div class="service-icon"><i class='fa-solid fa-tv'></i></div>
+                        <h3>TV Units</h3>
+                        <p>Built-in entertainment centers designed around your space and technology needs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section style="background: var(--light-bg);">
+            <div class="container">
+                <h2 class="section-title">WHY CHOOSE XABA'S CABINETRY</h2>
+                <p class="section-subtitle">What sets us apart from the rest</p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class='fa-solid fa-coins'></i></div>
+                        <h3>Transparent Pricing</h3>
+                        <p>Detailed, itemized quotes showing exactly what you pay for</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class='fa-solid fa-star'></i></div>
+                        <h3>Quality Materials</h3>
+                        <p>Sourced from reputable suppliers with quality guarantees</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class='fa-solid fa-screwdriver-wrench'></i></div>
+                        <h3>Professional Installation</h3>
+                        <p>Skilled tradespeople with attention to detail</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class='fa-solid fa-circle-check'></i></div>
+                        <h3>12-Month Warranty</h3>
+                        <p>We stand behind our workmanship</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class='fa-solid fa-ruler'></i></div>
+                        <h3>Accurate Pricing</h3>
+                        <p>Fair pricing based on actual project size</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class='fa-solid fa-house'></i></div>
+                        <h3>Complete Service</h3>
+                        <p>From demolition to final installation and cleanup</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">HOW IT WORKS</h2>
+                <p class="section-subtitle">Your journey from contact to completion</p>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Initial Contact</h3>
+                        <p>Reach out via phone, WhatsApp, email, or our contact form to tell us about your project</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Site Visit</h3>
+                        <p>We visit your property for measurements and consultation (call-out fee fully deducted if you proceed)</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Detailed Quote</h3>
+                        <p>Receive itemized breakdown of all costs within 24-48 hours</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Design Approval</h3>
+                        <p>Review and approve materials, design, and final quote</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <h3>Deposit & Booking</h3>
+                        <p>50% deposit secures materials and reserves installation dates</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">6</div>
+                        <h3>Professional Installation</h3>
+                        <p>Expert installation with progress payments (40% on start, 10% on completion)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Projects -->
+        <section style="background: var(--light-bg);">
+            <div class="container">
+                <h2 class="section-title">RECENT PROJECTS</h2>
+                <p class="section-subtitle">See the quality of our work</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="custom-builtin-kitchen.jpg" alt="Modern Kitchen">
+                        <div class="gallery-overlay">
+                            <h3>Modern Kitchen</h3>
+                            <p>6-meter complete installation</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="built-in-wardrobe (2).JPEG" alt="Built-in Wardrobe">
+                        <div class="gallery-overlay">
+                            <h3>Built-in Wardrobe</h3>
+                            <p>Wall-to-wall bedroom storage</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="built-in-wardrobe (5).JPEG" alt="Bathroom Vanity">
+                        <div class="gallery-overlay">
+                            <h3>Bathroom Vanity</h3>
+                            <p>Custom fitted with stone counter</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="custom-tv-stand.JPG" alt="TV Unit">
+                        <div class="gallery-overlay">
+                            <h3>Entertainment Center</h3>
+                            <p>Built-in TV unit with storage</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a class="btn btn-primary" onclick="showPage('gallery')">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">WHAT OUR CLIENTS SAY</h2>
+                <p class="section-subtitle">Real reviews from real customers</p>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Xaba's Cabinetry transformed our kitchen! Professional from start to finish, transparent pricing, and the quality is outstanding. Highly recommend!"</p>
+                        <p class="testimonial-author">Sarah M. - Randburg | Kitchen Renovation</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Finally found a cabinet maker who doesn't hide costs. Every expense was clearly explained. The built-in wardrobes are exactly what we wanted."</p>
+                        <p class="testimonial-author">Michael T. - Centurion | Bedroom Wardrobes</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Excellent workmanship and attention to detail. Our bathroom vanity fits perfectly and the installation was quick and clean. Will definitely use again."</p>
+                        <p class="testimonial-author">Linda K. - Vereeniging | Bathroom Vanity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section style="background: var(--primary-dark); color: var(--white); text-align: center;">
+            <div class="container">
+                <h2 class="section-title" style="color: var(--white);">READY TO TRANSFORM YOUR SPACE?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Get your detailed, transparent quote today</p>
+                <div class="cta-buttons">
+                    <a href="tel:0602064830" class="btn btn-primary">Call: 060 206 4830</a>
+                    <a class="btn btn-secondary" onclick="showPage('contact')">Get Your Quote</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page-content">
+        <div class="page-hero">
+            <h1>ABOUT XABA'S CABINETRY</h1>
+            <p>15+ Years of Quality Craftsmanship</p>
+        </div>
+        <section>
+            <div class="container">
+                <div class="service-detail">
+                    <div>
+                        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px;">Our Story</h2>
+                        <p style="line-height: 1.8; margin-bottom: 1.5rem;">Xaba's Cabinetry is a family-owned cabinet making business based in Vereeniging. With 15+ years of hands-on experience, we've built our reputation on quality craftsmanship, honest pricing, and exceptional customer service.</p>
+                        <p style="line-height: 1.8; margin-bottom: 1.5rem;">We believe every home deserves beautiful, functional spaces. That's why we specialize in custom built-in cabinetry solutions tailored to your exact needs and measurements. From your first inquiry to final installation, we're committed to transparency, professionalism, and delivering results that exceed expectations.</p>
+                    </div>
+                    <div>
+                        <img src="custom-tv-stand (2).jpg" alt="Our Workshop" style="width: 100%; height: 400px; object-fit: cover;">
+                    </div>
+                </div>
+
+                <div style="margin: 4rem 0;">
+                    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; text-align: center; margin-bottom: 2rem;">Our Mission</h2>
+                    <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto; line-height: 1.8;">"To transform houses into homes through exceptional built-in cabinetry solutions, delivered with transparency, quality, and care."</p>
+                </div>
+
+                <div>
+                    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 2rem;">Our Values</h2>
+                    <ul class="service-features">
+                        <li>Transparency in pricing and communication</li>
+                        <li>Quality craftsmanship in every project</li>
+                        <li>Professional service from start to finish</li>
+                        <li>Customer satisfaction guaranteed</li>
+                        <li>Fair pricing based on actual work</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 4rem; background: var(--light-bg); padding: 3rem; border-left: 4px solid var(--accent-orange);">
+                    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 2rem;">Why Built-In Cabinetry?</h2>
+                    <div class="features-grid">
+                        <div style="text-align: left;">
+                            <h3 style="font-family: 'Bebas Neue', sans-serif; margin-bottom: 0.5rem;">Maximizes Space</h3>
+                            <p>Utilizes every inch of available space</p>
+                        </div>
+                        <div style="text-align: left;">
+                            <h3 style="font-family: 'Bebas Neue', sans-serif; margin-bottom: 0.5rem;">Custom Fitted</h3>
+                            <p>Designed to your exact measurements</p>
+                        </div>
+                        <div style="text-align: left;">
+                            <h3 style="font-family: 'Bebas Neue', sans-serif; margin-bottom: 0.5rem;">Adds Value</h3>
+                            <p>Increases your property value</p>
+                        </div>
+                        <div style="text-align: left;">
+                            <h3 style="font-family: 'Bebas Neue', sans-serif; margin-bottom: 0.5rem;">Permanent Solution</h3>
+                            <p>Professional, lasting installation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <a class="btn btn-primary" onclick="showPage('contact')">Get Your Free Quote</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SERVICES PAGE -->
+    <div id="services" class="page-content">
+        <div class="page-hero">
+            <h1>OUR SERVICES</h1>
+            <p>Custom Built-In Cabinetry Solutions</p>
+        </div>
+        <section>
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card" onclick="showPage('wardrobes')">
+                        <div class="service-icon"><i class='fa-solid fa-door-open'></i></div>
+                        <h3>Built-In Wardrobes</h3>
+                        <p>Wall-to-wall, floor-to-ceiling custom fitted wardrobes that maximize your bedroom storage. Customized to your exact needs.</p>
+                    </div>
+                    <div class="service-card" onclick="showPage('kitchens')">
+                        <div class="service-icon"><i class='fa-solid fa-kitchen-set'></i></div>
+                        <h3>Kitchen Cabinets</h3>
+                        <p>Complete kitchen installations from demolition to final fitting. Transform your kitchen with quality materials and professional installation.</p>
+                    </div>
+                    <div class="service-card" onclick="showPage('vanities')">
+                        <div class="service-icon"><i class='fa-solid fa-shower'></i></div>
+                        <h3>Bathroom Vanities</h3>
+                        <p>Custom fitted bathroom vanities built to withstand moisture while providing essential storage and style.</p>
+                    </div>
+                    <div class="service-card" onclick="showPage('tv-units')">
+                        <div class="service-icon"><i class='fa-solid fa-tv'></i></div>
+                        <h3>TV Units & Entertainment Centers</h3>
+                        <p>Built-in entertainment centers designed around your space and technology needs with smart cable management.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🏢</div>
+                        <h3>Home Office Units</h3>
+                        <p>Built-in desks and storage solutions for productive home workspaces. Custom designed for functionality.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🧺</div>
+                        <h3>Laundry Room Cabinetry</h3>
+                        <p>Maximize your laundry room with custom built-in storage solutions designed for efficiency.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📦</div>
+                        <h3>Custom Storage Solutions</h3>
+                        <p>Unique built-in storage for any space in your home. We create solutions that fit your lifestyle.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔨</div>
+                        <h3>Demolition & Removal</h3>
+                        <p>Professional demolition and removal of existing cabinetry. Safe, legal disposal at registered sites.</p>
+                    </div>
+                </div>
+
+                <div style="background: var(--light-bg); padding: 3rem; margin-top: 4rem; border-left: 4px solid var(--accent-orange);">
+                    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1rem;">We Specialize in Built-In Cabinetry Only</h2>
+                    <p style="line-height: 1.8; margin-bottom: 1rem;">All our cabinetry is custom-fitted and permanently installed. We don't offer freestanding or movable furniture pieces.</p>
+                    <p style="line-height: 1.8; font-weight: 600;">Why? Because built-in solutions maximize space, increase property value, and provide a professional, permanent result that looks stunning and lasts for years.</p>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <a class="btn btn-primary" onclick="showPage('contact')">Get Your Custom Quote</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Individual Service Pages (Wardrobes, Kitchens, Vanities, TV Units) would follow here -->
+    <!-- For brevity, I'll include one example: -->
+
+    <!-- WARDROBES PAGE -->
+    <div id="wardrobes" class="page-content">
+        <div class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('built-in-wardrobe (5).JPEG') center/cover;">
+            <h1>BUILT-IN WARDROBES</h1>
+            <p>Custom Fitted Storage Solutions for Your Bedroom</p>
+        </div>
+        <section>
+            <div class="container">
+                <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 3rem; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">Custom built-in wardrobes designed to maximize your bedroom storage and transform wasted space into functional organization. Our wardrobes are wall-to-wall fitted with no wasted corner space, floor-to-ceiling for maximum storage capacity, and custom designed for YOUR needs.</p>
+
+                <div class="service-detail">
+                    <div>
+                        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1.5rem;">Features</h2>
+                        <ul class="service-features">
+                            <li>Hanging rails (single/double height)</li>
+                            <li>Adjustable shelving</li>
+                            <li>Drawer units</li>
+                            <li>Shoe racks</li>
+                            <li>Tie/belt organizers</li>
+                            <li>Mirror options (sliding/hinged doors)</li>
+                            <li>Soft-close mechanisms</li>
+                            <li>Interior lighting options</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1.5rem;">Materials Available</h2>
+                        <ul class="service-features">
+                            <li>Melamine board (various colors)</li>
+                            <li>Wood grain finishes</li>
+                            <li>High gloss options</li>
+                            <li>Custom color matching</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="background: var(--light-bg); padding: 3rem; margin: 4rem 0; text-align: center;">
+                    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1rem;">Pricing</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8;">Pricing depends on size and materials. Contact us for an accurate quote tailored to your specific project.</p>
+                    <a class="btn btn-primary" onclick="showPage('contact')" style="margin-top: 2rem; display: inline-block;">Contact Us For More Info</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- KITCHENS PAGE -->
+    <div id="kitchens" class="page-content">
+        <div class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('custom-tv-stand.JPG') center/cover;">
+            <h1>KITCHEN CABINETS</h1>
+            <p>Transform Your Kitchen with Quality Craftsmanship</p>
+        </div>
+        <section>
+            <div class="container">
+                <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 3rem; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">Transform your kitchen with custom built-in cabinets designed for functionality and style. From complete kitchen renovations to upgrades, we handle everything from demolition to final installation.</p>
+
+                <div class="service-detail">
+                    <div>
+                        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1.5rem;">What We Offer</h2>
+                        <ul class="service-features">
+                            <li>Base units (600mm depth standard)</li>
+                            <li>Wall units (300mm depth standard)</li>
+                            <li>Pantry units (tall storage)</li>
+                            <li>Corner solutions (lazy susan, magic corner)</li>
+                            <li>Appliance integration</li>
+                            <li>Countertop installation</li>
+                            <li>Splashback coordination</li>
+                            <li>Sink installation</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1.5rem;">Materials</h2>
+                        <ul class="service-features">
+                            <li>Melamine (durable, easy clean)</li>
+                            <li>Wood grain finishes</li>
+                            <li>High gloss (contemporary look)</li>
+                            <li>Custom colors available</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="text-align: center; background: var(--light-bg); padding: 3rem; margin-top: 4rem;">
+                    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1rem;">Pricing</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; max-width: 700px; margin: 0 auto 2rem;">Every kitchen is unique. Size, materials, and complexity determine cost. Contact us for a detailed quote tailored to your kitchen.</p>
+                    <a class="btn btn-primary" onclick="showPage('contact')">Start Your Kitchen Transformation</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- VANITIES PAGE -->
+    <div id="vanities" class="page-content">
+        <div class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('custom-tv-stand (2).jpg') center/cover;">
+            <h1>BATHROOM VANITIES</h1>
+            <p>Custom Solutions for Style and Functionality</p>
+        </div>
+        <section>
+            <div class="container">
+                <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 3rem; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">Custom bathroom vanities that combine style with functionality. Built to withstand humid conditions while providing essential storage.</p>
+
+                <div class="service-detail">
+                    <div>
+                        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1.5rem;">Features</h2>
+                        <ul class="service-features">
+                            <li>Custom sizing to fit your space</li>
+                            <li>Basin cutouts (undermount/overmount)</li>
+                            <li>Drawer or cupboard configurations</li>
+                            <li>Water-resistant materials</li>
+                            <li>Quality hinges and runners</li>
+                            <li>Mirror cabinets available</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1.5rem;">Materials</h2>
+                        <ul class="service-features">
+                            <li>Moisture-resistant melamine</li>
+                            <li>Waterproof finishes</li>
+                            <li>Durable hardware</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="text-align: center; background: var(--light-bg); padding: 3rem; margin: 4rem 0;">
+                    <a class="btn btn-primary" onclick="showPage('contact')">Get Your Vanity Quote</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- TV UNITS PAGE -->
+    <div id="tv-units" class="page-content">
+        <div class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('custom-builtin-kitchen.jpg') center/cover;">
+            <h1>TV UNITS & ENTERTAINMENT CENTERS</h1>
+            <p>Built-In Solutions for Modern Living</p>
+        </div>
+        <section>
+            <div class="container">
+                <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 3rem; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">Custom built-in TV units and entertainment centers designed around your space and technology needs.</p>
+
+                <div class="service-detail">
+                    <div>
+                        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1.5rem;">Features</h2>
+                        <ul class="service-features">
+                            <li>Custom sizing for your TV</li>
+                            <li>Cable management solutions</li>
+                            <li>Shelving for components</li>
+                            <li>Display areas</li>
+                            <li>Closed storage options</li>
+                            <li>Wall-mounted or floor-standing</li>
+                            <li>Lighting integration options</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="custom-builtin-kitchen.jpg" alt="TV Unit" style="width: 100%; height: 400px; object-fit: cover;">
+                    </div>
+                </div>
+
+                <div style="text-align: center; background: var(--accent-orange); color: var(--white); padding: 3rem; margin: 4rem 0;">
+                    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1rem;">Ready to Upgrade?</h2>
+                    <a class="btn btn-secondary" onclick="showPage('contact')">Design Your Entertainment Center</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- GALLERY PAGE -->
+    <div id="gallery" class="page-content">
+        <div class="page-hero">
+            <h1>OUR PORTFOLIO</h1>
+            <p>See the quality of our craftsmanship</p>
+        </div>
+        <section>
+            <div class="container">
+                <div class="gallery-filter">
+                    <button class="filter-btn active" onclick="filterGallery('all', event)">All Projects</button>
+                    <button class="filter-btn" onclick="filterGallery('wardrobes', event)">Wardrobes</button>
+                    <button class="filter-btn" onclick="filterGallery('kitchens', event)">Kitchens</button>
+                    <button class="filter-btn" onclick="filterGallery('vanities', event)">Vanities</button>
+                    <button class="filter-btn" onclick="filterGallery('tv-units', event)">TV Units</button>
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Note: Replace these placeholder images with your actual uploaded images -->
+                    <div class="gallery-item" data-category="kitchens">
+                        <img src="built-in-wardrobe (2).JPEG" alt="Modern Kitchen">
+                        <div class="gallery-overlay">
+                            <h3>Modern Kitchen</h3>
+                            <p>Sandton | 6-meter complete installation</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="wardrobes">
+                        <img src="built-in-wardrobe (5).JPEG" alt="Built-in Wardrobe">
+                        <div class="gallery-overlay">
+                            <h3>Built-in Wardrobe</h3>
+                            <p>Centurion | Wall-to-wall bedroom storage</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="vanities">
+                        <img src="custom-tv-stand.JPG" alt="Bathroom Vanity">
+                        <div class="gallery-overlay">
+                            <h3>Bathroom Vanity</h3>
+                            <p>Vereeniging | Custom fitted with stone counter</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="tv-units">
+                        <img src="custom-tv-stand (2).jpg" alt="TV Unit">
+                        <div class="gallery-overlay">
+                            <h3>Entertainment Center</h3>
+                            <p>Randburg | Built-in TV unit with storage</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="kitchens">
+                        <img src="custom-builtin-kitchen.jpg" alt="Kitchen Installation">
+                        <div class="gallery-overlay">
+                            <h3>Contemporary Kitchen</h3>
+                            <p>Midrand | Complete renovation</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="wardrobes">
+                        <img src="built-in-wardrobe (2).JPEG" alt="Wardrobe System">
+                        <div class="gallery-overlay">
+                            <h3>Wardrobe System</h3>
+                            <p>Alberton | Floor-to-ceiling storage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem; background: var(--light-bg); padding: 3rem;">
+                    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1rem;">Want This in Your Home?</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem;">Get your custom quote today and start your transformation</p>
+                    <a class="btn btn-primary" onclick="showPage('contact')">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- PRICING PAGE -->
+    <div id="pricing" class="page-content">
+        <div class="page-hero">
+            <h1>TRANSPARENT PRICING</h1>
+            <p>No Surprises, No Hidden Costs</p>
+        </div>
+        <section>
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1.5rem;">How Our Pricing Works</h2>
+                    <p style="line-height: 1.8; margin-bottom: 2rem;">Every project is unique. Pricing depends on size of your project (measured in linear meters), materials selected (melamine, wood grain, high gloss, etc.), countertop choice (laminate, granite, Caesarstone), hardware & finishes, project complexity, and installation requirements.</p>
+                    <p style="line-height: 1.8; margin-bottom: 3rem; font-weight: 600;">We provide accurate, transparent quotes tailored to YOUR specific project - no guesswork, no surprises.</p>
+
+                    <div style="background: var(--accent-orange); color: var(--white); padding: 3rem; margin: 3rem 0;">
+                        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1.5rem;">Why We Don't List Prices Online</h2>
+                        <p style="line-height: 1.8;">Cabinet pricing isn't one-size-fits-all. Every project is unique, and accurate pricing requires understanding your specific space dimensions, materials you prefer, countertop selection, project complexity, and installation requirements. We believe in transparency - which means giving you ACCURATE pricing for YOUR project, not generic estimates that may be completely wrong for your needs.</p>
+                    </div>
+
+                    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1.5rem;">Site Measurement & Consultation Fee</h2>
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th>Distance Zone</th>
+                                <th>Call-Out Fee</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0–15 km</td>
+                                <td>R200</td>
+                            </tr>
+                            <tr>
+                                <td>15–30 km</td>
+                                <td>R300</td>
+                            </tr>
+                            <tr>
+                                <td>30–45 km</td>
+                                <td>R600</td>
+                            </tr>
+                            <tr>
+                                <td>45–60 km</td>
+                                <td>R900</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="margin-top: 1rem; font-weight: 600; color: var(--accent-orange);">Important: Call-out fee is fully deducted from your final invoice if you proceed with the project.</p>
+
+                    <div style="margin: 4rem 0;">
+                        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1.5rem;">What's Included in Our Quotes</h2>
+                        <ul class="service-features">
+                            <li>Materials from supplier (with quality guarantee)</li>
+                            <li>Demolition & removal (if required) - per meter pricing</li>
+                            <li>Installation labor - calculated by project size and complexity</li>
+                            <li>Transport from warehouse to site</li>
+                            <li>Sundries (silicone, screws, fixings, consumables)</li>
+                            <li>Site visits and measurements</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: var(--light-bg); padding: 3rem; border-left: 4px solid var(--accent-orange);">
+                        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1.5rem;">Payment Terms</h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                            <div>
+                                <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--accent-orange); margin-bottom: 0.5rem;">50% Deposit</h3>
+                                <p>Due on acceptance to secure materials and reserve dates</p>
+                            </div>
+                            <div>
+                                <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--accent-orange); margin-bottom: 0.5rem;">40% Progress</h3>
+                                <p>Due on delivery/commencement of installation</p>
+                            </div>
+                            <div>
+                                <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--accent-orange); margin-bottom: 0.5rem;">10% Final</h3>
+                                <p>Due on completion and sign-off</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 4rem;">
+                        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1rem;">Ready for Your Custom Quote?</h2>
+                        <p style="margin-bottom: 2rem; font-size: 1.1rem;">Contact us today for an accurate, detailed quote tailored to your project</p>
+                        <a class="btn btn-primary" onclick="showPage('contact')">Get Your Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- PROCESS PAGE -->
+    <div id="process" class="page-content">
+        <div class="page-hero">
+            <h1>OUR PROCESS</h1>
+            <p>From Contact to Completion</p>
+        </div>
+        <section>
+            <div class="container">
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Initial Contact</h3>
+                        <p style="line-height: 1.8;">Reach out via phone, WhatsApp, email, or our website contact form. Tell us about your project - even rough ideas are fine!</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Site Visit & Consultation</h3>
+                        <p style="line-height: 1.8;">We visit your property to take accurate measurements, assess site conditions, discuss your needs, show material samples, and provide professional recommendations. Site fee is fully deducted if you proceed.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Detailed Quote</h3>
+                        <p style="line-height: 1.8;">Within 24-48 hours, receive an itemized breakdown of all costs, materials specifications, timeline estimate, payment schedule, and terms. Quote valid for 30 days - no pressure!</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Design Approval</h3>
+                        <p style="line-height: 1.8;">Approve materials and design, confirm final measurements, sign quotation acceptance, and we answer any last questions.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <h3>Secure Your Booking</h3>
+                        <p style="line-height: 1.8;">50% deposit payment secures your materials and reserves installation dates. We place orders with suppliers and confirm timeline.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">6</div>
+                        <h3>Professional Installation</h3>
+                        <p style="line-height: 1.8;">Our skilled team arrives on scheduled date, completes work professionally, ensures proper fitting, and performs daily cleanup. Progress payment (40%) due on start.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">7</div>
+                        <h3>Final Inspection & Sign-Off</h3>
+                        <p style="line-height: 1.8;">Inspect completed work, raise any adjustments needed, and sign off on completion. Final payment (10%) due. We're here if you need us!</p>
+                    </div>
+                </div>
+
+                <div style="background: var(--accent-orange); color: var(--white); padding: 3rem; margin-top: 4rem; text-align: center;">
+                    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1rem;">Ready to Start?</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem;">Let's begin your cabinetry transformation today</p>
+                    <a class="btn btn-secondary" onclick="showPage('contact')">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FAQ PAGE -->
+    <div id="faq" class="page-content">
+        <div class="page-hero">
+            <h1>FREQUENTLY ASKED QUESTIONS</h1>
+            <p>Everything You Need to Know</p>
+        </div>
+        <section>
+            <div class="container" style="max-width: 900px;">
+                <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 2px; margin-bottom: 2rem;">General Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you offer free quotes?</span>
+                        <span class="faq-icon"><i class='fa-solid fa-chevron-down'></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We charge a Site Measurement & Consultation Fee (R200-R900 depending on distance) which covers travel, time, and detailed measurements. This fee is fully deducted from your final invoice if you proceed with the project.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Why can't you give me a price over the phone?</span>
+                        <span class="faq-icon"><i class='fa-solid fa-chevron-down'></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Cabinet pricing depends entirely on your project size (measured in linear meters) and the materials you choose. We provide accurate pricing, not guesses - which protects both you and us from surprises later.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does a typical project take?</span>
+                        <span class="faq-icon"><i class='fa-solid fa-chevron-down'></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Timeline depends on project size: Small vanity: 1-2 days | Standard wardrobe (3-4m): 2-3 days | Medium kitchen (5-7m): 3-5 days | Large kitchen (8m+): 5-7 days. Total timeline from deposit to completion is typically 2-4 weeks.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What areas do you serve?</span>
+                        <span class="faq-icon"><i class='fa-solid fa-chevron-down'></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're based in Vereeniging and serve all around Gauteng. Contact us with your location for site visit fee details.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you do freestanding furniture?</span>
+                        <span class="faq-icon"><i class='fa-solid fa-chevron-down'></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, we specialize exclusively in built-in cabinetry that's custom-fitted and permanently installed.</p>
+                    </div>
+                </div>
+
+                <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 2px; margin: 3rem 0 2rem;">Warranty & After-Sales</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What's covered under warranty?</span>
+                        <span class="faq-icon"><i class='fa-solid fa-chevron-down'></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our 12-month workmanship warranty covers installation quality, door and drawer adjustments, hardware installation, and any defects in our workmanship. Materials are covered by supplier warranties.</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem; background: var(--light-bg); padding: 3rem;">
+                    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 1rem;">Still Have Questions?</h2>
+                    <p style="margin-bottom: 2rem; font-size: 1.1rem;">Contact us and we'll be happy to help</p>
+                    <a class="btn btn-primary" onclick="showPage('contact')">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page-content">
+        <div class="page-hero">
+            <h1>GET YOUR QUOTE</h1>
+            <p>Let's Transform Your Space Together</p>
+        </div>
+        <section>
+            <div class="container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon"><i class='fa-solid fa-phone'></i></div>
+                        <h3>Call Us</h3>
+                        <a href="tel:0602064830">060 206 4830</a>
+                        <p style="margin-top: 0.5rem; color: var(--gray); font-size: 0.9rem;">Mon-Fri: 7am-6pm<br>Sat: 8am-1pm</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class='fa-brands fa-whatsapp'></i></div>
+                        <h3>WhatsApp</h3>
+                        <a href="https://wa.me/27602064830">060 206 4830</a>
+                        <p style="margin-top: 0.5rem; color: var(--gray); font-size: 0.9rem;">Quick responses</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class='fa-solid fa-envelope'></i></div>
+                        <h3>Email</h3>
+                        <a href="mailto:manqobaxaba22@gmail.com">manqobaxaba22@gmail.com</a>
+                        <p style="margin-top: 0.5rem; color: var(--gray); font-size: 0.9rem;">24-48 hour response</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class='fa-solid fa-location-dot'></i></div>
+                        <h3>Location</h3>
+                        <p>Based in Vereeniging</p>
+                        <p style="margin-top: 0.5rem; color: var(--gray); font-size: 0.9rem;">Serving all of Gauteng</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; text-align: center; margin-bottom: 2rem;">Send Us Your Project Details</h2>
+                    
+                    <form id="contactForm" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location/Suburb *</label>
+                            <input type="text" id="location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="projectType">Project Type *</label>
+                            <select id="projectType" required>
+                                <option value="">Select a project type</option>
+                                <option value="Wardrobe">Built-In Wardrobe</option>
+                                <option value="Kitchen">Kitchen Cabinets</option>
+                                <option value="Vanity">Bathroom Vanity</option>
+                                <option value="TV Unit">TV Unit</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="projectSize">Project Size</label>
+                            <select id="projectSize">
+                                <option value="">Select size</option>
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                                <option value="Not Sure">Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMethod">Preferred Contact Method *</label>
+                            <select id="contactMethod" required>
+                                <option value="WhatsApp">WhatsApp</option>
+                                <option value="Phone">Phone Call</option>
+                                <option value="Email">Email</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message/Project Details</label>
+                            <textarea id="message" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" required>
+                            <label for="consent" style="text-transform: none;">I agree to be contacted regarding my inquiry *</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- TERMS PAGE -->
+    <div id="terms" class="page-content">
+        <div class="page-hero">
+            <h1>TERMS & CONDITIONS</h1>
+            <p>Please read carefully before proceeding</p>
+        </div>
+        <section>
+            <div class="container terms-content">
+                <h2>1. Payment Terms</h2>
+                <p>50% deposit due on acceptance, 40% on delivery/start, 10% on completion. Payment via EFT, cash, or card.</p>
+
+                <h2>2. Scope of Work</h2>
+                <p>Quote covers only work explicitly stated. Additional work quoted separately.</p>
+
+                <h2>3. Exclusions</h2>
+                <p>We don't provide plumbing alterations, electrical alterations, wall repairs, painting, tiling, or structural modifications unless specifically quoted.</p>
+
+                <h2>4. Client Responsibilities</h2>
+                <p>Client ensures site access, provides accurate information, clears installation area, and ensures utilities are functional.</p>
+
+                <h2>5. Installation Timeline</h2>
+                <p>Timelines are estimates. Delays due to material availability, site conditions, or weather are beyond our control.</p>
+
+                <h2>6. Warranty</h2>
+                <p>12-month workmanship warranty covers installation quality. Materials covered by supplier warranties. Excludes damage from misuse, alterations by others, or normal wear.</p>
+
+                <h2>7. Cancellation Policy</h2>
+                <p>Before materials ordered: lose call-out fee only. After materials ordered: deposit forfeited. During installation: pay for work completed plus materials purchased.</p>
+
+                <h2>8. Privacy</h2>
+                <p>Client information used only for project purposes and kept confidential per POPIA.</p>
+
+                <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: var(--light-bg);">
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem;">By accepting our quote, you agree to these terms and conditions.</p>
+                    <a class="btn btn-primary" onclick="showPage('contact')">Get Your Quote</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>XABA'S CABINETRY</h3>
+                <p style="margin-bottom: 1rem;">Transforming spaces with quality craftsmanship since 2009</p>
+                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Based in Vereeniging<br>Serving Gauteng</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a onclick="showPage('home')">Home</a></li>
+                    <li><a onclick="showPage('about')">About Us</a></li>
+                    <li><a onclick="showPage('services')">Services</a></li>
+                    <li><a onclick="showPage('gallery')">Gallery</a></li>
+                    <li><a onclick="showPage('pricing')">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a onclick="showPage('wardrobes')">Built-In Wardrobes</a></li>
+                    <li><a onclick="showPage('kitchens')">Kitchen Cabinets</a></li>
+                    <li><a onclick="showPage('vanities')">Bathroom Vanities</a></li>
+                    <li><a onclick="showPage('tv-units')">TV Units</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="tel:0602064830"><i class='fa-solid fa-phone'></i> 060 206 4830</a></li>
+                    <li><a href="https://wa.me/27602064830"><i class='fa-brands fa-whatsapp'></i> WhatsApp</a></li>
+                    <li><a href="mailto:manqobaxaba22@gmail.com"><i class='fa-solid fa-envelope'></i> Email Us</a></li>
+                    <li><a onclick="showPage('faq')">FAQ</a></li>
+                    <li><a onclick="showPage('terms')">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Xaba's Cabinetry. All rights reserved. | Custom Built-In Cabinetry Solutions</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/27602064830" class="whatsapp-float" target="_blank" title="Chat on WhatsApp"><i class='fa-brands fa-whatsapp'></i></a>
+
+    <!-- JavaScript -->
+    <script>
+        // Page Navigation
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            const selectedPage = document.getElementById(pageId);
+            if (selectedPage) {
+                selectedPage.classList.add('active');
+                window.scrollTo(0, 0);
+            }
+            
+            document.getElementById('navLinks').classList.remove('active');
+        }
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+
+        // Gallery Filter
+        function filterGallery(category, event) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Form Submission - Sends to WhatsApp
+        function submitForm(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const location = document.getElementById('location').value;
+            const projectType = document.getElementById('projectType').value;
+            const projectSize = document.getElementById('projectSize').value;
+            const contactMethod = document.getElementById('contactMethod').value;
+            const message = document.getElementById('message').value;
+            
+            const whatsappMessage = `*New Quote Inquiry*%0A%0A` +
+                `*Name:* ${encodeURIComponent(name)}%0A` +
+                `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                `*Email:* ${encodeURIComponent(email)}%0A` +
+                `*Location:* ${encodeURIComponent(location)}%0A` +
+                `*Project Type:* ${encodeURIComponent(projectType)}%0A` +
+                `*Project Size:* ${encodeURIComponent(projectSize)}%0A` +
+                `*Preferred Contact:* ${encodeURIComponent(contactMethod)}%0A` +
+                `*Message:* ${encodeURIComponent(message)}`;
+            
+            window.open(`https://wa.me/27602064830?text=${whatsappMessage}`, '_blank');
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
+            } else {
+                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
