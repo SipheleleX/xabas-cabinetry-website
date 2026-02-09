@@ -1,6 +1,8 @@
 # Xaba's Cabinetry Website
 
- <img width="250" height="250" align="center" alt="XABA&#39;s Cabinetry" src="https://github.com/user-attachments/assets/78b3b4bd-109d-4e07-a17e-5b5a563bf500" />
+<p align="center">
+  <img width="250" height="250" alt="XABA's Cabinetry" src="https://github.com/user-attachments/assets/78b3b4bd-109d-4e07-a17e-5b5a563bf500" />
+</p>
 
 A professional, responsive website for Xaba's Cabinetry - Custom Built-In Cabinetry Solutions in Vereeniging, Gauteng.
 
