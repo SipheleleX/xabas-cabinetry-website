@@ -1703,74 +1703,317 @@
         </section>
     </div>
 
-    <!-- FAQ PAGE -->
-    <div id="faq" class="page-content">
-        <div class="page-hero">
-            <h1>FREQUENTLY ASKED QUESTIONS</h1>
-            <p>Everything You Need to Know</p>
-        </div>
-        <section>
-            <div class="container" style="max-width: 900px;">
-                <h2 style="font-size: 2rem; margin-bottom: var(--spacing-lg);">General Questions</h2>
-                
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Do you offer free quotes?</span>
-                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We charge a Site Measurement & Consultation Fee (R200-R500 depending on distance) which covers travel, time, and detailed measurements. This fee is fully deducted from your final invoice if you proceed with the project.</p>
-                    </div>
+    <!-- FAQ PAGE - Replace the existing FAQ page section -->
+<div id="faq" class="page-content">
+    <div class="page-hero">
+        <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        <p>Everything You Need to Know</p>
+    </div>
+    <section>
+        <div class="container" style="max-width: 900px;">
+            
+            <!-- Materials & Quality -->
+            <h2 style="font-size: 2rem; margin-bottom: var(--spacing-lg); color: var(--accent-orange);">Materials & Quality</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What materials do you use for cabinets?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
                 </div>
-
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Why can't you give me a price over the phone?</span>
-                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Cabinet pricing depends entirely on your project size (measured in linear meters) and the materials you choose. We provide accurate pricing, not guesses - which protects both you and us from surprises later.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>How long does a typical project take?</span>
-                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Timeline depends on project size: Small vanity: 1-2 days | Standard wardrobe (3-4m): 2-3 days | Medium kitchen (5-7m): 3-5 days | Large kitchen (8m+): 5-7 days. Total timeline from deposit to completion is typically 2-4 weeks.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>What areas do you serve?</span>
-                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We're based in Vereeniging and serve all around Gauteng. Contact us with your location for site visit fee details.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Do you do freestanding furniture?</span>
-                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>No, we specialize exclusively in built-in cabinetry that's custom-fitted and permanently installed.</p>
-                    </div>
-                </div>
-
-                <div class="text-center mt-4" style="background: var(--light-bg); padding: var(--spacing-xl);">
-                    <h2 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">Still Have Questions?</h2>
-                    <p style="margin-bottom: var(--spacing-lg); font-size: 1.1rem;">Contact us and we'll be happy to help</p>
-                    <a class="btn btn-primary" onclick="showPage('contact')">Get In Touch</a>
+                <div class="faq-answer">
+                    <p>We offer a range of quality materials to suit different budgets: Melamine board (durable, easy to clean, various colors and wood-grain finishes), wood grain finishes (realistic wood appearance at affordable prices), high gloss options (modern, sleek finish), and soft-close European hinges and drawer runners as standard. All materials meet industry standards and come with supplier warranties.</p>
                 </div>
             </div>
-        </section>
-    </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Can I choose custom colors?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We offer a wide range of colors and finishes. During your site visit, I'll bring material samples so you can see options in your actual space with your lighting. Custom color matching is also available for certain materials.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Do you use soft-close hinges and drawer runners?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, absolutely! All our installations include quality soft-close hinges and drawer runners as standard. They're more durable, operate smoothly, and eliminate slamming.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What's the difference between melamine and wood grain?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Melamine:</strong> Solid colors (white, grey, black, etc.), very durable, easy to clean, more affordable. <strong>Wood grain:</strong> Realistic wood appearance on melamine base, same durability as solid melamine, slightly higher cost, warmer aesthetic. Both are excellent choices - it comes down to your style preference and budget.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How do I care for my new cabinets?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Daily care:</strong> Wipe with damp cloth and mild detergent, dry immediately (don't leave standing water), avoid abrasive cleaners. <strong>Avoid:</strong> Excessive moisture around edges, harsh chemicals or bleach, direct heat exposure. With proper care, your cabinets will look great for many years!</p>
+                </div>
+            </div>
+
+            <!-- Measurements & Design -->
+            <h2 style="font-size: 2rem; margin: var(--spacing-xl) 0 var(--spacing-lg) 0; color: var(--accent-orange);">Measurements & Design</h2>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Can I measure my space myself?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>While you can provide rough measurements to give me an idea, I always do professional measurements during the site visit. Walls are rarely perfectly straight or level, hidden obstacles affect design, ceiling heights can vary, and professional measurements ensure perfect fit. Accurate measurements are critical - mistakes are expensive!</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Do you provide design drawings before I commit?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! After the site visit, I provide a basic layout drawing with your quote showing the general configuration. Detailed technical drawings are finalized once you approve the quote and pay the deposit.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What if my walls aren't straight or level?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Don't worry - this is very common! Professional installation includes leveling (units installed perfectly level regardless of floor), scribing (cabinets fitted to follow wall contours), and shimming (gaps filled and units secured properly). Part of my job is working with imperfect spaces to create perfect results!</p>
+                </div>
+            </div>
+
+            <!-- Installation Process -->
+            <h2 style="font-size: 2rem; margin: var(--spacing-xl) 0 var(--spacing-lg) 0; color: var(--accent-orange);">Installation Process</h2>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How messy is the installation process?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>I take cleanliness seriously. During work, I use dust sheets to protect floors and surrounding areas. Daily site cleanup at end of each day. Thorough cleanup on completion including vacuuming and waste removal. There will be some dust and disruption (it's unavoidable), but I minimize mess and clean up properly.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Do I need to be home during installation?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Not for the entire time. First day: good to be present. During work: someone should provide access and be available for questions. Final day: you must be present for inspection and sign-off. If you can't be home, a responsible adult can grant access.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What happens if you find problems during installation?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>If I discover hidden issues (rot, water damage, structural problems): I stop work and inform you immediately, show you the problem and explain options, provide a quote for additional work needed, and get your written approval before proceeding. No surprise charges!</p>
+                </div>
+            </div>
+
+            <!-- Plumbing & Electrical -->
+            <h2 style="font-size: 2rem; margin: var(--spacing-xl) 0 var(--spacing-lg) 0; color: var(--accent-orange);">Plumbing & Electrical</h2>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Do you do plumbing work?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Included:</strong> Reconnecting existing plumbing (sink, dishwasher connections). <strong>Not included:</strong> Moving pipes, installing new water points, gas connections, or any alterations requiring a licensed plumber. If plumbing alterations are needed, I can recommend licensed plumbers.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Do you do electrical work?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Included:</strong> Reconnecting existing appliance plugs (oven, hob, extractor). <strong>Not included:</strong> Installing new electrical points, moving outlets, any wiring changes. Electrical alterations must be done by certified electricians for safety and compliance.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Do you install appliances?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>I will:</strong> Create cutouts and spaces for built-in appliances, install built-in ovens and microwaves into cabinetry, connect existing appliance plugs to outlets. <strong>I won't:</strong> Install gas hobs (requires licensed gas fitter), do new electrical wiring, handle appliance warranties or repairs. Appliances must be delivered to site before installation begins.</p>
+                </div>
+            </div>
+
+            <!-- Costs & Expenses -->
+            <h2 style="font-size: 2rem; margin: var(--spacing-xl) 0 var(--spacing-lg) 0; color: var(--accent-orange);">Costs & Unexpected Expenses</h2>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Why don't you list prices on your website?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Because every project is different! Pricing depends on size, materials, countertops, complexity, and additional features. Generic prices would be misleading. I provide accurate quotes specific to YOUR project.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Are there any hidden costs?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>No hidden costs!</strong> My quotes are fully itemized showing materials (with markup explained), labor, transport, demolition (if needed), and sundries. The only additional costs would be unforeseen issues discovered during work - and I get your approval BEFORE proceeding with any extras.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Do you offer financing or payment plans?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>I work with a standard 50/40/10 payment structure. For larger projects or special circumstances, I can discuss adjusted payment schedules. I don't offer formal financing, but we can discuss phasing the project to spread costs.</p>
+                </div>
+            </div>
+
+            <!-- Warranties & After-Sales -->
+            <h2 style="font-size: 2rem; margin: var(--spacing-xl) 0 var(--spacing-lg) 0; color: var(--accent-orange);">Warranties & After-Sales</h2>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What if a door or drawer doesn't close properly after installation?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Minor adjustments are normal and covered under warranty. Doors may need adjustment as hinges settle (first few weeks), drawers may need runner adjustment. This is normal settling and I'll come back to adjust at no charge. Just contact me!</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Can you come back for adjustments after the warranty period?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Even after the 12-month warranty, I'm available for repairs or adjustments (charged at hourly rate). Minor tweaks (hinge adjustments, etc.) may be done at no charge. I want you to be happy with your cabinets long-term!</p>
+                </div>
+            </div>
+
+            <!-- General Questions -->
+            <h2 style="font-size: 2rem; margin: var(--spacing-xl) 0 var(--spacing-lg) 0; color: var(--accent-orange);">General Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Do you offer free quotes?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>We charge a Site Measurement & Consultation Fee (R200-R500 depending on distance) which covers travel, time, and detailed measurements. This fee is fully deducted from your final invoice if you proceed with the project.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Why can't you give me a price over the phone?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Cabinet pricing depends entirely on your project size (measured in linear meters) and the materials you choose. We provide accurate pricing, not guesses - which protects both you and us from surprises later.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How long does a typical project take?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Timeline depends on project size: Small vanity: 1-2 days | Standard wardrobe (3-4m): 2-3 days | Medium kitchen (5-7m): 3-5 days | Large kitchen (8m+): 5-7 days. Total timeline from deposit to completion is typically 2-4 weeks.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What areas do you serve?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>We're based in Vereeniging and serve all around Gauteng. Contact us with your location for site visit fee details.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Do you do freestanding furniture?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>No, we specialize exclusively in built-in cabinetry that's custom-fitted and permanently installed.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Do you do repairs or modifications to existing cabinets?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, I offer repair and modification services: replace broken doors or drawer fronts, fix or replace damaged hinges/runners, add shelves or modify interiors, re-edge damaged edges, and general cabinet repairs. Site visit fee applies, then I'll quote for the specific work needed.</p>
+                </div>
+            </div>
+
+            <!-- Getting Started -->
+            <h2 style="font-size: 2rem; margin: var(--spacing-xl) 0 var(--spacing-lg) 0; color: var(--accent-orange);">Getting Started</h2>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>I'm ready to start - what are the next steps?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Great! Contact me (call, WhatsApp, or email), schedule a site visit (call-out fee applies, deductible), receive detailed quote within 2-5 business days, review and ask questions, approve quote and pay 50% deposit, I order materials (1-2 weeks delivery), scheduled installation begins, final inspection and payment. From first contact to installation: typically 2-4 weeks.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Can I see examples of your previous work?</span>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! Check out our Gallery page for before/after photos, follow us on social media (TikTok, Instagram, Facebook) for latest projects, or I bring photos during site visit consultation. My work speaks for itself!</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-4" style="background: var(--light-bg); padding: var(--spacing-xl);">
+                <h2 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">Still Have Questions?</h2>
+                <p style="margin-bottom: var(--spacing-lg); font-size: 1.1rem;">Contact us and we'll be happy to help</p>
+                <a class="btn btn-primary" onclick="showPage('contact')">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+</div>
 
     <!-- CONTACT PAGE -->
     <div id="contact" class="page-content">
