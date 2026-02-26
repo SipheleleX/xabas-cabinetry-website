@@ -4,14 +4,14 @@
   <img width="250" height="250" alt="XABA's Cabinetry" src="https://github.com/user-attachments/assets/78b3b4bd-109d-4e07-a17e-5b5a563bf500" />
 </p>
 
-A professional, responsive website for Xaba's Cabinetry - Custom Built-In Cabinetry Solutions in Vereeniging, Gauteng.
+A professional, responsive website for Xaba's Cabinetry - Custom Built-In Cabinetry Solutions in Gauteng.
 
 ##  Live Website
 Visit: https://xabascabinetry.co.za/
 
 ## About
 
-Xaba's Cabinetry specializes in custom built-in cabinetry solutions including:
+Xaba's Cabinetry (Pty) Ltd specializes in custom built-in cabinetry solutions including:
 - Built-In Wardrobes
 - Kitchen Cabinets
 - Bathroom Vanities
@@ -20,7 +20,7 @@ Xaba's Cabinetry specializes in custom built-in cabinetry solutions including:
 - Custom Storage Solutions
 
 **Experience:** 15+ years of quality craftsmanship  
-**Location:** Vereeniging, Gauteng, South Africa  
+**Location:** Gauteng, South Africa  
 **Contact:** 060 206 4830
 
 ##  Project Structure
@@ -61,7 +61,7 @@ xabas-cabinetry/
 
 ##  License
 
-© 2025 Xaba's Cabinetry. All rights reserved.
+© 2025 Xaba's Cabinetry (Pty) Ltd. All rights reserved.
 
 ##  Credits
 
