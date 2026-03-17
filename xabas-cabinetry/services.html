@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Xaba's Cabinetry (Pty) Ltd</title>
+  <meta name="description" content="Custom built-in wardrobes, kitchen cabinets, bathroom vanities, TV units and more. Professional cabinetry installation across Gauteng.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    .services-intro { padding: var(--section-pad); }
+    .services-intro p {
+      max-width: 700px;
+      font-size: 0.95rem;
+      color: var(--ash);
+      line-height: 1.85;
+      margin-top: 2rem;
+    }
+
+    .service-block {
+      padding: 4rem 2rem;
+      border-top: 0.5px solid var(--stone-dark);
+    }
+    .service-block:nth-child(even) { background: var(--stone-mid); }
+    .service-block-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .service-block-inner.reverse { direction: rtl; }
+    .service-block-inner.reverse > * { direction: ltr; }
+    .service-block-img {
+      height: 420px;
+      background: var(--stone-dark);
+      overflow: hidden;
+    }
+    .service-block-img img { height: 100%; }
+    .service-block-content {}
+    .sb-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1.25rem;
+    }
+    .sb-eyebrow::before { content: ''; display: block; width: 20px; height: 1px; background: var(--amber); }
+    .sb-eyebrow span {
+      font-size: 8px; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--amber);
+    }
+    .sb-num {
+      font-size: 4rem;
+      color: var(--stone-dark);
+      font-family: 'DM Serif Display', serif;
+      font-style: italic;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .sb-title {
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .sb-desc {
+      font-size: 0.875rem;
+      color: var(--ash);
+      line-height: 1.85;
+      margin-bottom: 1.5rem;
+    }
+    .sb-features { list-style: none; margin-bottom: 2rem; }
+    .sb-feature {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0.6rem 0;
+      border-bottom: 0.5px solid var(--stone-dark);
+      font-size: 9px;
+      color: var(--ash);
+      letter-spacing: 0.3px;
+    }
+    .sb-feature:first-child { border-top: 0.5px solid var(--stone-dark); }
+    .sb-feature::before {
+      content: '';
+      width: 4px; height: 4px;
+      background: var(--amber);
+      flex-shrink: 0;
+      opacity: 0.8;
+    }
+
+    .builtin-only {
+      background: var(--ink);
+      padding: 3rem 2rem;
+      border-top: 0.5px solid var(--charcoal);
+    }
+    .builtin-only-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .builtin-only h2 {
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      color: var(--white);
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+    .builtin-only p { font-size: 0.875rem; color: var(--mist); line-height: 1.8; }
+    .builtin-right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--charcoal);
+    }
+    .br-item {
+      background: var(--ink);
+      padding: 1.25rem;
+    }
+    .br-icon { color: var(--amber); font-size: 1rem; margin-bottom: 0.5rem; opacity: 0.8; }
+    .br-name { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--white); font-weight: 300; }
+
+    @media (max-width: 900px) {
+      .service-block-inner,
+      .service-block-inner.reverse { grid-template-columns: 1fr; direction: ltr; }
+      .service-block-img { height: 260px; }
+      .builtin-only-inner { grid-template-columns: 1fr; gap: 2rem; }
+    }
+  </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow"><span>Services</span></div>
+    <h1>Custom built-in<br>cabinetry solutions.</h1>
+    <p>We specialise exclusively in permanently installed, custom-fitted cabinetry — built to your exact space and specifications.</p>
+  </div>
+</div>
+
+<section class="services-intro">
+  <div class="container">
+    <div class="label section-label">What we offer</div>
+    <p>Every service we offer is built-in only — permanently installed and custom-fitted to your exact measurements. No freestanding furniture, no off-the-shelf dimensions. Just cabinetry made specifically for your home.</p>
+  </div>
+</section>
+
+<!-- WARDROBES -->
+<div id="wardrobes" class="service-block">
+  <div class="service-block-inner">
+    <div class="service-block-img">
+      <img src="images/built-in-wardrobe (2).JPEG" alt="Built-in wardrobe">
+    </div>
+    <div class="service-block-content">
+      <div class="sb-eyebrow"><span>Service 01</span></div>
+      <div class="sb-num">01</div>
+      <h2 class="sb-title">Built-In Wardrobes</h2>
+      <p class="sb-desc">Wall-to-wall, floor-to-ceiling custom fitted wardrobes that eliminate wasted space and transform your bedroom storage. Designed around your exact needs — from hanging rail configurations to drawer layouts and shoe racks.</p>
+      <ul class="sb-features">
+        <li class="sb-feature">Single & double hanging rail configurations</li>
+        <li class="sb-feature">Adjustable shelving</li>
+        <li class="sb-feature">Drawer units</li>
+        <li class="sb-feature">Shoe racks & organiser inserts</li>
+        <li class="sb-feature">Mirror options — sliding or hinged doors</li>
+        <li class="sb-feature">Soft-close hinges & runners (standard)</li>
+        <li class="sb-feature">Interior lighting options</li>
+      </ul>
+      <a href="contact.html" class="btn btn-amber">Get a Wardrobe Quote</a>
+    </div>
+  </div>
+</div>
+
+<!-- KITCHENS -->
+<div id="kitchens" class="service-block">
+  <div class="service-block-inner reverse">
+    <div class="service-block-img">
+      <img src="images/custom-builtin-kitchen.jpg" alt="Custom kitchen cabinets">
+    </div>
+    <div class="service-block-content">
+      <div class="sb-eyebrow"><span>Service 02</span></div>
+      <div class="sb-num">02</div>
+      <h2 class="sb-title">Kitchen Cabinets</h2>
+      <p class="sb-desc">Complete kitchen installations from demolition of existing cabinets through to final fitting. We handle the full scope — base units, wall units, pantry units, countertops and appliance integration.</p>
+      <ul class="sb-features">
+        <li class="sb-feature">Base units (600mm depth standard)</li>
+        <li class="sb-feature">Wall units (300mm depth standard)</li>
+        <li class="sb-feature">Pantry & tall storage units</li>
+        <li class="sb-feature">Corner solutions — lazy susan, magic corner</li>
+        <li class="sb-feature">Countertop installation</li>
+        <li class="sb-feature">Appliance integration & cutouts</li>
+        <li class="sb-feature">Sink installation</li>
+        <li class="sb-feature">Demolition of existing cabinetry included</li>
+      </ul>
+      <a href="contact.html" class="btn btn-amber">Get a Kitchen Quote</a>
+    </div>
+  </div>
+</div>
+
+<!-- VANITIES -->
+<div id="vanities" class="service-block">
+  <div class="service-block-inner">
+    <div class="service-block-img">
+      <img src="images/built-in-wardrobe (5).JPEG" alt="Bathroom vanity">
+    </div>
+    <div class="service-block-content">
+      <div class="sb-eyebrow"><span>Service 03</span></div>
+      <div class="sb-num">03</div>
+      <h2 class="sb-title">Bathroom Vanities</h2>
+      <p class="sb-desc">Custom fitted bathroom vanities that combine style with functionality. Built using moisture-resistant materials to withstand humid conditions while providing essential storage — sized and configured for your exact bathroom layout.</p>
+      <ul class="sb-features">
+        <li class="sb-feature">Custom sizing to fit your space exactly</li>
+        <li class="sb-feature">Basin cutouts — undermount or overmount</li>
+        <li class="sb-feature">Drawer or cupboard configurations</li>
+        <li class="sb-feature">Moisture-resistant melamine</li>
+        <li class="sb-feature">Waterproof finishes & durable hardware</li>
+        <li class="sb-feature">Mirror cabinets available</li>
+      </ul>
+      <a href="contact.html" class="btn btn-amber">Get a Vanity Quote</a>
+    </div>
+  </div>
+</div>
+
+<!-- TV UNITS -->
+<div id="tv-units" class="service-block">
+  <div class="service-block-inner reverse">
+    <div class="service-block-img">
+      <img src="images/custom-tv-stand.JPG" alt="Built-in TV unit">
+    </div>
+    <div class="service-block-content">
+      <div class="sb-eyebrow"><span>Service 04</span></div>
+      <div class="sb-num">04</div>
+      <h2 class="sb-title">TV Units & Entertainment Centers</h2>
+      <p class="sb-desc">Built-in entertainment centres designed around your TV size, component layout and cable management needs. Wall-mounted or floor-standing — we design and build around the space you have.</p>
+      <ul class="sb-features">
+        <li class="sb-feature">Custom sizing for any TV size</li>
+        <li class="sb-feature">Cable management routing</li>
+        <li class="sb-feature">Component shelving & closed storage</li>
+        <li class="sb-feature">Display niches & feature panels</li>
+        <li class="sb-feature">Fluted panel options</li>
+        <li class="sb-feature">Integrated lighting options</li>
+      </ul>
+      <a href="contact.html" class="btn btn-amber">Get a TV Unit Quote</a>
+    </div>
+  </div>
+</div>
+
+<!-- OTHER SERVICES -->
+<div id="office" class="service-block">
+  <div class="service-block-inner">
+    <div class="service-block-img" style="background: var(--stone-mid); display:flex; align-items:center; justify-content:center;">
+      <span style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--concrete);">Photo coming soon</span>
+    </div>
+    <div class="service-block-content">
+      <div class="sb-eyebrow"><span>Service 05</span></div>
+      <div class="sb-num">05</div>
+      <h2 class="sb-title">Home Office Units</h2>
+      <p class="sb-desc">Built-in desks, shelving and storage solutions for productive home workspaces. Custom designed for your room dimensions, workflow, and storage requirements.</p>
+      <ul class="sb-features">
+        <li class="sb-feature">Built-in desk surfaces</li>
+        <li class="sb-feature">Overhead shelving & wall units</li>
+        <li class="sb-feature">Filing & document storage</li>
+        <li class="sb-feature">Cable management</li>
+        <li class="sb-feature">Bespoke configurations</li>
+      </ul>
+      <a href="contact.html" class="btn btn-amber">Discuss Your Project</a>
+    </div>
+  </div>
+</div>
+
+<div id="storage" class="service-block">
+  <div class="service-block-inner reverse">
+    <div class="service-block-img" style="background: var(--stone-mid); display:flex; align-items:center; justify-content:center;">
+      <span style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--concrete);">Photo coming soon</span>
+    </div>
+    <div class="service-block-content">
+      <div class="sb-eyebrow"><span>Service 06</span></div>
+      <div class="sb-num">06</div>
+      <h2 class="sb-title">Custom Storage & Demolition</h2>
+      <p class="sb-desc">Unique built-in storage for any room — laundry rooms, garages, linen cupboards. We also offer professional demolition of existing cabinetry, priced per linear metre.</p>
+      <ul class="sb-features">
+        <li class="sb-feature">Laundry room cabinetry</li>
+        <li class="sb-feature">Linen cupboards</li>
+        <li class="sb-feature">Custom storage configurations</li>
+        <li class="sb-feature">Demolition of old cabinets & tiles — per metre pricing</li>
+      </ul>
+      <a href="contact.html" class="btn btn-amber">Discuss Your Project</a>
+    </div>
+  </div>
+</div>
+
+<!-- BUILT-IN ONLY NOTE -->
+<div class="builtin-only">
+  <div class="builtin-only-inner">
+    <div>
+      <h2>We specialise in built-in cabinetry only.</h2>
+      <p>All our cabinetry is custom-fitted and permanently installed. We don't offer freestanding or movable furniture. Built-in solutions maximise space, increase property value, and provide a professional, permanent result that looks stunning and lasts for years.</p>
+    </div>
+    <div class="builtin-right">
+      <div class="br-item"><div class="br-icon"><i class="fa-solid fa-maximize"></i></div><div class="br-name">Maximises space</div></div>
+      <div class="br-item"><div class="br-icon"><i class="fa-solid fa-ruler-combined"></i></div><div class="br-name">Custom fitted</div></div>
+      <div class="br-item"><div class="br-icon"><i class="fa-solid fa-house-chimney"></i></div><div class="br-name">Adds home value</div></div>
+      <div class="br-item"><div class="br-icon"><i class="fa-solid fa-shield"></i></div><div class="br-name">Lasts for decades</div></div>
+    </div>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="components.js"></script>
+</body>
+</html>

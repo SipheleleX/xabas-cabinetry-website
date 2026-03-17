@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | Xaba's Cabinetry (Pty) Ltd</title>
+  <meta name="description" content="Transparent pricing for custom built-in cabinetry in Gauteng. Site visit fees, payment terms and what's included in every quote.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    .pricing-section { padding: var(--section-pad); }
+    .pricing-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-top: 3rem;
+      align-items: start;
+    }
+    .pricing-intro-text h2 {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+      font-family: 'DM Serif Display', serif;
+      font-style: italic;
+    }
+    .pricing-intro-text p {
+      font-size: 0.875rem;
+      color: var(--ash);
+      line-height: 1.85;
+      margin-bottom: 1rem;
+    }
+    .pricing-intro-text strong { color: var(--ink); font-weight: 500; }
+    .why-no-prices {
+      background: var(--ink);
+      padding: 2rem;
+      border-left: 2px solid var(--amber);
+    }
+    .why-no-prices h3 {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--amber);
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    .why-no-prices p {
+      font-size: 0.85rem;
+      color: var(--mist);
+      line-height: 1.8;
+    }
+
+    /* CALLOUT FEE TABLE */
+    .callout-section {
+      padding: var(--section-pad);
+      background: var(--stone-mid);
+      border-top: 0.5px solid var(--stone-dark);
+    }
+    .callout-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-top: 2.5rem;
+      align-items: start;
+    }
+    .price-table { width: 100%; border-collapse: collapse; }
+    .price-table thead tr {
+      background: var(--ink);
+    }
+    .price-table th {
+      padding: 0.9rem 1.25rem;
+      text-align: left;
+      font-size: 8px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--white);
+      font-weight: 300;
+    }
+    .price-table td {
+      padding: 0.9rem 1.25rem;
+      font-size: 0.875rem;
+      border-bottom: 0.5px solid var(--stone-dark);
+      color: var(--ash);
+    }
+    .price-table td:last-child {
+      color: var(--amber);
+      font-weight: 400;
+      font-family: 'DM Serif Display', serif;
+      font-size: 1rem;
+      font-style: italic;
+    }
+    .price-table tbody tr:hover { background: var(--stone); }
+    .callout-note {
+      margin-top: 1rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .callout-note::before {
+      content: '';
+      width: 5px; height: 5px;
+      background: var(--amber);
+      flex-shrink: 0;
+      margin-top: 6px;
+      opacity: 0.8;
+    }
+    .callout-note p {
+      font-size: 9px;
+      color: var(--amber);
+      line-height: 1.6;
+      letter-spacing: 0.3px;
+    }
+    .callout-right h3 {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 1.25rem;
+    }
+    .includes-list { list-style: none; }
+    .includes-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 0.75rem 0;
+      border-bottom: 0.5px solid var(--stone-dark);
+      font-size: 9px;
+      color: var(--ash);
+      line-height: 1.5;
+    }
+    .includes-item:first-child { border-top: 0.5px solid var(--stone-dark); }
+    .includes-item::before {
+      content: '';
+      width: 4px; height: 4px;
+      background: var(--amber);
+      flex-shrink: 0;
+      margin-top: 5px;
+      opacity: 0.8;
+    }
+
+    /* PAYMENT TERMS */
+    .payment-section { padding: var(--section-pad); }
+    .payment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--stone-dark);
+      border: 0.5px solid var(--stone-dark);
+      margin-top: 2.5rem;
+    }
+    .payment-card {
+      background: var(--stone);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+    .payment-pct {
+      font-size: 3.5rem;
+      color: var(--amber-light);
+      font-family: 'DM Serif Display', serif;
+      font-style: italic;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .payment-label {
+      font-size: 8px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 1rem;
+    }
+    .payment-when {
+      font-size: 9px;
+      color: var(--ash);
+      line-height: 1.6;
+    }
+    .payment-divider {
+      width: 20px; height: 1px;
+      background: var(--stone-dark);
+      margin: 1rem auto;
+    }
+    .payment-note {
+      background: var(--ink);
+      padding: 1.5rem 2rem;
+      border: 0.5px solid var(--charcoal);
+      margin-top: 1px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .payment-note-icon { color: var(--amber); opacity: 0.8; flex-shrink: 0; }
+    .payment-note p { font-size: 9px; color: var(--mist); line-height: 1.6; }
+
+    .pricing-cta {
+      background: var(--ink);
+      padding: 4rem 2rem;
+      text-align: center;
+      border-top: 0.5px solid var(--charcoal);
+    }
+    .pricing-cta h2 {
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      color: var(--white);
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+    .pricing-cta p { font-size: 0.875rem; color: var(--mist); margin-bottom: 2rem; }
+    .btn-group { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
+    @media (max-width: 900px) {
+      .pricing-intro, .callout-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .payment-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow"><span>Pricing</span></div>
+    <h1>Transparent pricing.<br>No surprises.</h1>
+    <p>Every quote is fully itemised — you know exactly what you're paying for before you commit to a single cent.</p>
+  </div>
+</div>
+
+<section class="pricing-section">
+  <div class="container">
+    <div class="label section-label">How our pricing works</div>
+    <div class="pricing-intro">
+      <div class="pricing-intro-text">
+        <h2>Accurate pricing for<br><em>your project.</em></h2>
+        <p>Every project is unique. Pricing is determined by the size of your project (measured in linear metres), materials selected (melamine, wood grain, high gloss), countertop choice (laminate, granite, Caesarstone), hardware and finishes, project complexity, and installation requirements.</p>
+        <p><strong>We provide accurate, transparent quotes tailored to your specific project</strong> — no guesswork, no surprises, no hidden costs.</p>
+      </div>
+      <div class="why-no-prices">
+        <h3>Why we don't list prices online</h3>
+        <p>Cabinet pricing isn't one-size-fits-all. A 3-metre wardrobe and an 8-metre kitchen are completely different projects. We believe in transparency — which means giving you accurate pricing for your project, not generic estimates that may be wildly off for your actual needs. A site visit is the only honest way to quote.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="callout-section">
+  <div class="container">
+    <div class="label section-label">Site measurement & consultation fee</div>
+    <div class="callout-grid">
+      <div>
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Distance from base</th>
+              <th>Call-out fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0 – 15 km</td><td>R200</td></tr>
+            <tr><td>15 – 30 km</td><td>R300</td></tr>
+            <tr><td>30 – 45 km</td><td>R400</td></tr>
+            <tr><td>45 – 60+ km</td><td>R500</td></tr>
+          </tbody>
+        </table>
+        <div class="callout-note">
+          <p>The site visit fee is fully deducted from your final invoice if you proceed with the project.</p>
+        </div>
+      </div>
+      <div class="callout-right">
+        <h3>What's included in every quote</h3>
+        <ul class="includes-list">
+          <li class="includes-item">Materials sourced from reputable suppliers — with quality guarantees</li>
+          <li class="includes-item">Demolition (if required) — priced per linear metre</li>
+          <li class="includes-item">Installation labour — calculated by project size and complexity</li>
+          <li class="includes-item">Transport from warehouse to installation site</li>
+          <li class="includes-item">Sundries — silicone, screws, fixings and consumables</li>
+          <li class="includes-item">Site visits and professional measurements</li>
+          <li class="includes-item">Basic layout drawings for review before approval</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="payment-section">
+  <div class="container">
+    <div class="label section-label">Payment structure</div>
+    <div class="payment-grid">
+      <div class="payment-card">
+        <div class="payment-pct">50%</div>
+        <div class="payment-label">Deposit</div>
+        <div class="payment-divider"></div>
+        <div class="payment-when">Due on quote acceptance. Secures your materials and reserves installation dates. We place supplier orders immediately.</div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-pct">40%</div>
+        <div class="payment-label">Progress Payment</div>
+        <div class="payment-divider"></div>
+        <div class="payment-when">Due on delivery of materials or commencement of installation — whichever comes first.</div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-pct">10%</div>
+        <div class="payment-label">Final Payment</div>
+        <div class="payment-divider"></div>
+        <div class="payment-when">Due on completion and sign-off. Only paid once you've inspected the work and are satisfied.</div>
+      </div>
+    </div>
+    <div class="payment-note">
+      <span class="payment-note-icon"><i class="fa-solid fa-circle-info"></i></span>
+      <p>Payment via EFT, cash or card. For larger projects, adjusted payment schedules can be discussed. We don't offer formal financing, but we can discuss phasing certain projects to spread costs over time.</p>
+    </div>
+  </div>
+</section>
+
+<div class="pricing-cta">
+  <h2>Ready for your custom quote?</h2>
+  <p>Contact us to schedule a site visit and receive your detailed, itemised quote within 2–5 business days.</p>
+  <div class="btn-group">
+    <a href="contact.html" class="btn btn-amber">Request a Quote</a>
+    <a href="process.html" class="btn btn-outline-light">See the full process</a>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="components.js"></script>
+</body>
+</html>

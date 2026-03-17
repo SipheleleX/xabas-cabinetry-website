@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | Xaba's Cabinetry (Pty) Ltd</title>
+  <meta name="description" content="Frequently asked questions about custom built-in cabinetry — materials, pricing, installation, plumbing and more.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    .faq-section { padding: var(--section-pad); }
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 4rem;
+      margin-top: 3rem;
+      align-items: start;
+    }
+
+    /* SIDEBAR NAV */
+    .faq-nav { position: sticky; top: calc(var(--nav-h) + 2rem); }
+    .faq-nav-label {
+      font-size: 8px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--ash);
+      margin-bottom: 1rem;
+    }
+    .faq-nav-list { list-style: none; }
+    .faq-nav-item a {
+      display: block;
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--ash);
+      padding: 0.6rem 0;
+      border-bottom: 0.5px solid var(--stone-dark);
+      transition: color 0.2s;
+    }
+    .faq-nav-item:first-child a { border-top: 0.5px solid var(--stone-dark); }
+    .faq-nav-item a:hover { color: var(--amber); }
+
+    /* FAQ GROUPS */
+    .faq-group { margin-bottom: 3rem; }
+    .faq-group-title {
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--amber);
+      display: inline-block;
+    }
+
+    /* ACCORDION */
+    .faq-item { border-bottom: 0.5px solid var(--stone-dark); }
+    .faq-item:first-of-type { border-top: 0.5px solid var(--stone-dark); }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      padding: 1.1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font);
+    }
+    .faq-question span:first-child {
+      font-size: 0.875rem;
+      color: var(--ink);
+      font-weight: 300;
+      letter-spacing: 0.2px;
+      text-align: left;
+    }
+    .faq-icon {
+      font-size: 10px;
+      color: var(--amber);
+      flex-shrink: 0;
+      transition: transform 0.3s;
+    }
+    .faq-item.open .faq-icon { transform: rotate(180deg); }
+    .faq-item.open .faq-question span:first-child { color: var(--amber); }
+    .faq-answer {
+      display: none;
+      padding: 0 0 1.25rem;
+    }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-answer p {
+      font-size: 0.875rem;
+      color: var(--ash);
+      line-height: 1.8;
+      margin-bottom: 0.5rem;
+    }
+    .faq-answer p:last-child { margin-bottom: 0; }
+    .faq-answer strong { color: var(--ink); font-weight: 500; }
+
+    .faq-cta {
+      background: var(--ink);
+      padding: 3rem 2rem;
+      text-align: center;
+      border-top: 0.5px solid var(--charcoal);
+    }
+    .faq-cta h2 {
+      font-size: clamp(1.3rem, 2vw, 1.8rem);
+      color: var(--white);
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.75rem;
+    }
+    .faq-cta p { font-size: 0.875rem; color: var(--mist); margin-bottom: 1.5rem; }
+    .btn-group { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
+    @media (max-width: 900px) {
+      .faq-layout { grid-template-columns: 1fr; gap: 2rem; }
+      .faq-nav { position: static; }
+    }
+  </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow"><span>FAQ</span></div>
+    <h1>Frequently asked<br>questions.</h1>
+    <p>Everything you need to know about working with us — materials, pricing, installation, plumbing and more.</p>
+  </div>
+</div>
+
+<section class="faq-section">
+  <div class="container">
+    <div class="label section-label">All questions</div>
+    <div class="faq-layout">
+
+      <nav class="faq-nav">
+        <div class="faq-nav-label">Jump to section</div>
+        <ul class="faq-nav-list">
+          <li class="faq-nav-item"><a href="#materials">Materials & quality</a></li>
+          <li class="faq-nav-item"><a href="#measurements">Measurements & design</a></li>
+          <li class="faq-nav-item"><a href="#installation">Installation</a></li>
+          <li class="faq-nav-item"><a href="#plumbing">Plumbing & electrical</a></li>
+          <li class="faq-nav-item"><a href="#costs">Costs & payment</a></li>
+          <li class="faq-nav-item"><a href="#warranty">Warranty & after-sales</a></li>
+          <li class="faq-nav-item"><a href="#general">General</a></li>
+        </ul>
+      </nav>
+
+      <div class="faq-content">
+
+        <div class="faq-group" id="materials">
+          <div class="faq-group-title">Materials & quality</div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What materials do you use for cabinets?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>We offer a range of quality materials to suit different budgets and aesthetics: <strong>melamine board</strong> (durable, easy to clean, available in a wide range of solid colours and wood-grain finishes), <strong>wood grain finishes</strong> (realistic wood appearance at affordable prices), and <strong>high gloss options</strong> for a more contemporary look.</p>
+              <p>All installations include soft-close European hinges and drawer runners as standard. All materials meet industry standards and come with supplier warranties.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Can I choose custom colours?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. We offer a wide range of colours and finishes. During your site visit, we'll bring material samples so you can see the options in your actual space with your lighting — that makes all the difference. Custom colour matching is also available for certain materials.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Do you use soft-close hinges and drawer runners?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes — soft-close hinges and drawer runners are included as standard in every installation. They're more durable, operate smoothly, and eliminate slamming. It's not an optional extra with us.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What's the difference between melamine and wood grain?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Melamine</strong> comes in solid colours (white, grey, black, and many more). Very durable, easy to clean, and the most affordable option. <strong>Wood grain</strong> uses a realistic wood-look finish on a melamine base — same durability, slightly warmer aesthetic, marginally higher cost. Both are excellent choices; it comes down to your style preference and budget.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>How do I care for my new cabinets?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Daily care:</strong> Wipe with a damp cloth and mild detergent, then dry immediately. Never leave standing water on surfaces or around edges. Avoid abrasive cleaners, harsh chemicals, or bleach. Avoid direct heat exposure. With proper care, your cabinetry will look great for many years.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-group" id="measurements">
+          <div class="faq-group-title">Measurements & design</div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Can I measure my space myself?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>You can provide rough measurements to give us a general idea, but we always take professional measurements during the site visit. Walls are rarely perfectly straight, ceilings can vary in height, and there are often hidden obstacles that affect the design. Accurate measurements are critical — mistakes are expensive to fix.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Do you provide design drawings before I commit?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. After the site visit, we include a basic layout drawing with your quote showing the general configuration. Detailed technical drawings are finalised once you approve the quote and pay the deposit.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What if my walls aren't straight or level?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>This is very common and completely manageable. Professional installation includes levelling (units installed perfectly level regardless of the floor), scribing (cabinets fitted to follow wall contours), and shimming (gaps properly filled and units securely fixed). Working with imperfect spaces to deliver perfect results is part of the job.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-group" id="installation">
+          <div class="faq-group-title">Installation process</div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>How messy is the installation process?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>We take cleanliness seriously. Dust sheets are used to protect floors and surroundings throughout the job. At the end of each working day, we do a full site cleanup. On completion, we do a thorough cleanup including vacuuming and waste removal. There will be some dust and disruption — that's unavoidable — but we minimise it and clean up properly.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Do I need to be home during installation?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Not for the entire time. On the first day, it's good to be present. During the rest of the project, someone should provide access and be available for any questions. On the final day, you must be present for the inspection and sign-off. If you can't be home, a responsible adult can grant access on your behalf.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What if you find problems during installation?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>If we discover hidden issues (rot, water damage, structural problems), we stop work immediately and inform you. We'll show you the problem, explain your options, and provide a quote for any additional work required. We get your written approval before proceeding with anything outside the original scope. No surprise charges.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-group" id="plumbing">
+          <div class="faq-group-title">Plumbing & electrical</div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Do you do plumbing work?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Included:</strong> Reconnecting existing plumbing (sink, dishwasher connections). <strong>Not included:</strong> Moving pipes, installing new water points, gas connections, or any alterations requiring a licensed plumber. If plumbing alterations are needed, we can recommend qualified plumbers.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Do you do electrical work?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Included:</strong> Reconnecting existing appliance plugs (oven, hob, extractor). <strong>Not included:</strong> Installing new electrical points, moving outlets, or any wiring changes. Electrical alterations must be done by a certified electrician for safety and legal compliance.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Do you install appliances?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>We will:</strong> Create cutouts and spaces for built-in appliances, install built-in ovens and microwaves into cabinetry, and connect existing appliance plugs to outlets. <strong>We won't:</strong> Install gas hobs (requires a licensed gas fitter), do new electrical wiring, or handle appliance warranties. Appliances must be on-site before installation begins.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-group" id="costs">
+          <div class="faq-group-title">Costs & payment</div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Are there any hidden costs?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>No. Our quotes are fully itemised — materials (with markup explained), labour, transport, demolition (if applicable), and sundries. The only additional costs would be unforeseen issues discovered during work, and we always get your approval before proceeding with any extras.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Why can't you give me a price over the phone?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Cabinet pricing depends entirely on your project's linear meterage and the materials you choose. Giving a phone estimate would mean giving you a guess — which protects neither of us. We'd rather give you an accurate price after seeing your actual space.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Do you offer payment plans or financing?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>We work with a standard 50/40/10 payment structure. For larger projects or special circumstances, adjusted payment schedules can be discussed. We don't offer formal financing, but we can discuss phasing the project to spread costs over time.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-group" id="warranty">
+          <div class="faq-group-title">Warranty & after-sales</div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What if a door or drawer doesn't close properly after installation?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Minor adjustments are normal as hinges and runners settle during the first few weeks. This is covered under warranty — just contact us and we'll come back to make the adjustments at no charge.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Can you come back for adjustments after the warranty period?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>We're available for repairs and adjustments after the warranty period (charged at an hourly rate). Minor tweaks like hinge adjustments may be done at no charge depending on the circumstances. We want you to be happy with your cabinetry long-term.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-group" id="general">
+          <div class="faq-group-title">General</div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>How long does a typical project take?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Installation time depends on project size: small vanity (1–2 days), standard wardrobe 3–4m (2–3 days), medium kitchen 5–7m (3–5 days), large kitchen 8m+ (5–7 days). Total timeline from first contact to completion is typically 2–4 weeks, including the quote process and materials delivery.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What areas do you serve?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>We serve all of Gauteng. The site visit fee (R200–R500) is based on distance from our base. Contact us with your area and we'll confirm the applicable call-out fee.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Do you do freestanding furniture or repairs to existing cabinets?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>No — we specialise exclusively in custom built-in cabinetry that is permanently fitted to your space. We don't make or sell freestanding furniture, and we don't offer repair or modification services for existing cabinetry not installed by us.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="faq-cta">
+  <h2>Still have questions?</h2>
+  <p>We're happy to help — contact us directly and we'll get back to you quickly.</p>
+  <div class="btn-group">
+    <a href="contact.html" class="btn btn-amber">Get in Touch</a>
+    <a href="tel:0602064830" class="btn btn-outline-light">Call 060 206 4830</a>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="components.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>

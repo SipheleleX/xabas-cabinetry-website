@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Xaba's Cabinetry (Pty) Ltd</title>
+  <meta name="description" content="Family-owned cabinetry business in Gauteng with 15+ years of experience. Learn about our story, mission and values.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    .story-section { padding: var(--section-pad); }
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+      margin-top: 3rem;
+    }
+    .story-text h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      font-family: 'DM Serif Display', serif;
+      font-style: italic;
+    }
+    .story-text p {
+      font-size: 0.9rem;
+      color: var(--ash);
+      line-height: 1.85;
+      margin-bottom: 1.25rem;
+    }
+    .story-image {
+      height: 480px;
+      background: var(--stone-mid);
+      overflow: hidden;
+    }
+    .story-image img { height: 100%; }
+
+    .mission-band {
+      background: var(--ink);
+      padding: 4rem 2rem;
+      text-align: center;
+      border-top: 0.5px solid var(--charcoal);
+      border-bottom: 0.5px solid var(--charcoal);
+    }
+    .mission-band .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1.5rem;
+      justify-content: center;
+    }
+    .mission-band .eyebrow::before,
+    .mission-band .eyebrow::after {
+      content: ''; display: block; width: 30px; height: 1px; background: var(--amber);
+    }
+    .mission-band .eyebrow span {
+      font-size: 8px; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--amber);
+    }
+    .mission-band blockquote {
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+      color: var(--white);
+      font-style: italic;
+      font-family: 'DM Serif Display', serif;
+      max-width: 780px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    .values-section { padding: var(--section-pad); background: var(--stone-mid); }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1px;
+      background: var(--stone-dark);
+      border: 0.5px solid var(--stone-dark);
+      margin-top: 2.5rem;
+    }
+    .val-item {
+      background: var(--stone-mid);
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    .val-icon {
+      font-size: 1.25rem;
+      color: var(--amber);
+      margin-bottom: 1rem;
+      opacity: 0.85;
+    }
+    .val-name {
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--ink);
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+    .val-desc {
+      font-size: 8.5px;
+      color: var(--ash);
+      line-height: 1.6;
+    }
+
+    .why-builtin { padding: var(--section-pad); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-top: 2.5rem;
+      align-items: center;
+    }
+    .why-image {
+      height: 420px;
+      background: var(--stone-mid);
+      overflow: hidden;
+    }
+    .why-image img { height: 100%; }
+    .why-points { list-style: none; }
+    .why-point {
+      display: flex;
+      gap: 1.25rem;
+      padding: 1.25rem 0;
+      border-bottom: 0.5px solid var(--stone-dark);
+    }
+    .why-point:first-child { border-top: 0.5px solid var(--stone-dark); }
+    .why-point-num {
+      font-size: 1.4rem;
+      color: var(--stone-dark);
+      font-family: 'DM Serif Display', serif;
+      font-style: italic;
+      line-height: 1;
+      flex-shrink: 0;
+      width: 2rem;
+    }
+    .why-point-content h4 {
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--ink);
+      font-weight: 400;
+      margin-bottom: 0.35rem;
+    }
+    .why-point-content p {
+      font-size: 9px;
+      color: var(--ash);
+      line-height: 1.6;
+    }
+
+    .about-cta {
+      background: var(--ink);
+      padding: 4rem 2rem;
+      text-align: center;
+      border-top: 0.5px solid var(--charcoal);
+    }
+    .about-cta h2 {
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      color: var(--white);
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+    .about-cta p {
+      font-size: 0.875rem;
+      color: var(--mist);
+      margin-bottom: 2rem;
+    }
+    .about-cta .btn-group { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
+    @media (max-width: 900px) {
+      .story-grid { grid-template-columns: 1fr; }
+      .story-image { height: 300px; }
+      .values-grid { grid-template-columns: 1fr 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .why-image { height: 260px; order: -1; }
+    }
+    @media (max-width: 600px) {
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow"><span>About us</span></div>
+    <h1>A family business<br>built on craft.</h1>
+    <p>15+ years of quality craftsmanship, honest pricing, and exceptional customer service across Gauteng.</p>
+  </div>
+</div>
+
+<!-- STORY -->
+<section class="story-section">
+  <div class="container">
+    <div class="label section-label">Our story</div>
+    <div class="story-grid">
+      <div class="story-text">
+        <h2>Where it all<br><em>began.</em></h2>
+        <p>Xaba's Cabinetry (Pty) Ltd is a registered family-owned cabinet making business based in Gauteng. With over 15 years of hands-on experience, we've built our reputation on quality craftsmanship, honest pricing, and exceptional customer service.</p>
+        <p>What started as a passion for woodwork and built environments grew into a fully registered business committed to transforming Gauteng homes. Every project — from a single bathroom vanity to a complete kitchen renovation — receives the same level of care and attention to detail.</p>
+        <p>We believe every home deserves beautiful, functional spaces. That's why we specialise exclusively in custom built-in cabinetry solutions — fitted permanently to your exact measurements. No freestanding furniture, no compromises.</p>
+        <p>From your first inquiry to final sign-off, we're committed to transparency, professionalism, and results that exceed expectations.</p>
+      </div>
+      <div class="story-image">
+        <img src="images/custom-tv-stand (2).jpg" alt="Xaba's Cabinetry craftsmanship">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<div class="mission-band">
+  <div class="eyebrow"><span>Our mission</span></div>
+  <blockquote>"To transform houses into homes through exceptional built-in cabinetry solutions, delivered with transparency, quality, and care."</blockquote>
+</div>
+
+<!-- VALUES -->
+<section class="values-section">
+  <div class="container">
+    <div class="label section-label">Our values</div>
+    <div class="values-grid">
+      <div class="val-item">
+        <div class="val-icon"><i class="fa-solid fa-eye"></i></div>
+        <div class="val-name">Transparency</div>
+        <p class="val-desc">Itemised quotes. No hidden costs. You know exactly what you pay for.</p>
+      </div>
+      <div class="val-item">
+        <div class="val-icon"><i class="fa-solid fa-star"></i></div>
+        <div class="val-name">Quality</div>
+        <p class="val-desc">Reputable materials, quality hardware, and craftsmanship that lasts.</p>
+      </div>
+      <div class="val-item">
+        <div class="val-icon"><i class="fa-solid fa-handshake"></i></div>
+        <div class="val-name">Professionalism</div>
+        <p class="val-desc">Clean, punctual, communicative — from first contact to sign-off.</p>
+      </div>
+      <div class="val-item">
+        <div class="val-icon"><i class="fa-solid fa-heart"></i></div>
+        <div class="val-name">Satisfaction</div>
+        <p class="val-desc">We don't consider a project complete until you're happy with it.</p>
+      </div>
+      <div class="val-item">
+        <div class="val-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="val-name">Fair Pricing</div>
+        <p class="val-desc">Priced on actual project size and materials — no guesswork.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY BUILT-IN -->
+<section class="why-builtin">
+  <div class="container">
+    <div class="label section-label">Why built-in cabinetry?</div>
+    <div class="why-grid">
+      <div class="why-image">
+        <img src="images/built-in-wardrobe (5).JPEG" alt="Built-in wardrobe">
+      </div>
+      <ul class="why-points">
+        <li class="why-point">
+          <div class="why-point-num">01</div>
+          <div class="why-point-content">
+            <h4>Maximises every centimetre</h4>
+            <p>Utilises every inch of available space — floor-to-ceiling, wall-to-wall, no wasted corners.</p>
+          </div>
+        </li>
+        <li class="why-point">
+          <div class="why-point-num">02</div>
+          <div class="why-point-content">
+            <h4>Custom fitted to your space</h4>
+            <p>Designed around your exact measurements — walls, ceilings, and all the quirks of your home.</p>
+          </div>
+        </li>
+        <li class="why-point">
+          <div class="why-point-num">03</div>
+          <div class="why-point-content">
+            <h4>Adds property value</h4>
+            <p>Professionally installed built-in cabinetry consistently increases home resale value.</p>
+          </div>
+        </li>
+        <li class="why-point">
+          <div class="why-point-num">04</div>
+          <div class="why-point-content">
+            <h4>A permanent, lasting solution</h4>
+            <p>Unlike freestanding furniture, built-in cabinetry is installed once and built to last for decades.</p>
+          </div>
+        </li>
+        <li class="why-point">
+          <div class="why-point-num">05</div>
+          <div class="why-point-content">
+            <h4>Uniquely yours</h4>
+            <p>No off-the-shelf dimensions. Every unit is made for your home, your needs, your style.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT CTA -->
+<div class="about-cta">
+  <h2>Ready to transform your space?</h2>
+  <p>Get your detailed, transparent quote today — no obligation.</p>
+  <div class="btn-group">
+    <a href="contact.html" class="btn btn-amber">Get a Quote</a>
+    <a href="process.html" class="btn btn-outline-light">See how it works</a>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="components.js"></script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Process | Xaba's Cabinetry (Pty) Ltd</title>
+  <meta name="description" content="From first contact to final sign-off — our 7-step process for custom built-in cabinetry projects in Gauteng.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    .process-section { padding: var(--section-pad); }
+
+    .steps-container { margin-top: 3rem; }
+    .step-row {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 0;
+      border-top: 0.5px solid var(--stone-dark);
+    }
+    .step-row:last-child { border-bottom: 0.5px solid var(--stone-dark); }
+    .step-row.highlight { background: var(--stone-mid); }
+    .step-num-col {
+      padding: 2.5rem 1.5rem;
+      border-right: 0.5px solid var(--stone-dark);
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .step-num-label {
+      font-size: 2rem;
+      color: var(--stone-dark);
+      font-family: 'DM Serif Display', serif;
+      font-style: italic;
+      line-height: 1;
+    }
+    .step-row.highlight .step-num-label { color: var(--amber-light); }
+    .step-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      padding: 2.5rem 2rem;
+      align-items: start;
+    }
+    .step-main h3 {
+      font-size: clamp(1rem, 1.5vw, 1.3rem);
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .step-row.highlight .step-main h3 span { color: var(--amber); }
+    .step-main p {
+      font-size: 0.875rem;
+      color: var(--ash);
+      line-height: 1.8;
+    }
+    .step-details { }
+    .step-detail-list { list-style: none; }
+    .step-detail-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 0.5rem 0;
+      border-bottom: 0.5px solid var(--stone-dark);
+      font-size: 9px;
+      color: var(--ash);
+      line-height: 1.5;
+    }
+    .step-detail-item:first-child { border-top: 0.5px solid var(--stone-dark); }
+    .step-detail-item::before {
+      content: '';
+      width: 3px; height: 3px;
+      background: var(--amber);
+      flex-shrink: 0;
+      margin-top: 6px;
+      opacity: 0.7;
+    }
+    .step-tag {
+      display: inline-block;
+      font-size: 7px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border: 0.5px solid var(--amber);
+      color: var(--amber);
+      margin-bottom: 0.75rem;
+    }
+
+    .timeline-bar {
+      background: var(--ink);
+      border-top: 0.5px solid var(--charcoal);
+      border-bottom: 0.5px solid var(--charcoal);
+      padding: 2.5rem 2rem;
+    }
+    .timeline-inner { max-width: var(--max-w); margin: 0 auto; }
+    .timeline-label {
+      font-size: 8px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--mist);
+      margin-bottom: 1.5rem;
+    }
+    .timeline-items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--charcoal);
+    }
+    .timeline-item {
+      background: var(--ink);
+      padding: 1.25rem;
+    }
+    .tl-range {
+      font-size: 1rem;
+      color: var(--amber-light);
+      font-family: 'DM Serif Display', serif;
+      font-style: italic;
+      margin-bottom: 0.25rem;
+    }
+    .tl-label {
+      font-size: 8px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--mist);
+    }
+
+    .process-cta {
+      background: var(--amber);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .process-cta h2 {
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      color: var(--white);
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+    .process-cta p { font-size: 0.875rem; color: rgba(255,255,255,0.75); margin-bottom: 2rem; }
+    .btn-group { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .btn-white { background: var(--white); color: var(--amber-dark); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; padding: 10px 20px; display: inline-block; }
+    .btn-white:hover { background: var(--ink); color: var(--white); }
+
+    @media (max-width: 900px) {
+      .step-content { grid-template-columns: 1fr; gap: 1.5rem; }
+      .step-row { grid-template-columns: 60px 1fr; }
+      .timeline-items { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .step-row { grid-template-columns: 1fr; }
+      .step-num-col { padding: 1.5rem 2rem; border-right: none; border-bottom: 0.5px solid var(--stone-dark); justify-content: flex-start; }
+      .timeline-items { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow"><span>Our process</span></div>
+    <h1>From first contact<br>to final sign-off.</h1>
+    <p>7 clear steps. No surprises. You know exactly what's happening at every stage.</p>
+  </div>
+</div>
+
+<section class="process-section">
+  <div class="container">
+    <div class="label section-label">Step by step</div>
+    <div class="steps-container">
+
+      <div class="step-row">
+        <div class="step-num-col"><span class="step-num-label">01</span></div>
+        <div class="step-content">
+          <div class="step-main">
+            <div class="step-tag">Getting started</div>
+            <h3>Initial contact</h3>
+            <p>Reach out via phone, WhatsApp, email, or our contact form. Even rough ideas are fine — you don't need to have everything figured out. We'll guide you from here.</p>
+          </div>
+          <ul class="step-detail-list">
+            <li class="step-detail-item">Call or WhatsApp 060 206 4830</li>
+            <li class="step-detail-item">Email info@xabascabinetry.co.za</li>
+            <li class="step-detail-item">Submit via our contact form</li>
+            <li class="step-detail-item">Tell us your project type and rough location</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step-row highlight">
+        <div class="step-num-col"><span class="step-num-label">02</span></div>
+        <div class="step-content">
+          <div class="step-main">
+            <div class="step-tag">Site visit</div>
+            <h3><span>Measurements &</span> consultation</h3>
+            <p>We visit your property to take accurate measurements, assess site conditions, discuss your needs, show material samples, and provide professional recommendations. Site fee: R200–R500 (fully deductible if you proceed).</p>
+          </div>
+          <ul class="step-detail-list">
+            <li class="step-detail-item">Professional measurements taken on-site</li>
+            <li class="step-detail-item">Material samples shown in your actual space</li>
+            <li class="step-detail-item">Site conditions & challenges assessed</li>
+            <li class="step-detail-item">Design recommendations discussed</li>
+            <li class="step-detail-item">Site visit fee fully deducted if you proceed</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step-row">
+        <div class="step-num-col"><span class="step-num-label">03</span></div>
+        <div class="step-content">
+          <div class="step-main">
+            <div class="step-tag">Your quote</div>
+            <h3>Detailed itemised quote</h3>
+            <p>Within 2–5 business days, you receive a fully itemised breakdown. No estimates — every cost is listed. You'll also receive a basic layout drawing. Quote valid for 30 days, no pressure.</p>
+          </div>
+          <ul class="step-detail-list">
+            <li class="step-detail-item">Received within 2–5 business days</li>
+            <li class="step-detail-item">Every cost itemised — materials, labour, transport, sundries</li>
+            <li class="step-detail-item">Basic layout drawing included</li>
+            <li class="step-detail-item">Timeline estimate provided</li>
+            <li class="step-detail-item">Valid for 30 days — take your time</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step-row highlight">
+        <div class="step-num-col"><span class="step-num-label">04</span></div>
+        <div class="step-content">
+          <div class="step-main">
+            <div class="step-tag">Key milestone</div>
+            <h3><span>Design approval</span></h3>
+            <p>Review the quote and layout at your own pace. Ask any questions — we're happy to explain every line item. Once you're satisfied, sign the acceptance and we move forward.</p>
+          </div>
+          <ul class="step-detail-list">
+            <li class="step-detail-item">Review materials and design at your pace</li>
+            <li class="step-detail-item">Confirm final measurements</li>
+            <li class="step-detail-item">Ask questions — no question is too small</li>
+            <li class="step-detail-item">Sign quotation acceptance to proceed</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step-row">
+        <div class="step-num-col"><span class="step-num-label">05</span></div>
+        <div class="step-content">
+          <div class="step-main">
+            <div class="step-tag">Secure your slot</div>
+            <h3>Deposit & booking</h3>
+            <p>50% deposit payment secures your materials and reserves your installation dates. We place orders with our suppliers immediately — typical delivery is 1–2 weeks.</p>
+          </div>
+          <ul class="step-detail-list">
+            <li class="step-detail-item">50% deposit confirms your booking</li>
+            <li class="step-detail-item">Materials ordered from suppliers immediately</li>
+            <li class="step-detail-item">Installation dates reserved and confirmed</li>
+            <li class="step-detail-item">Materials delivery: typically 1–2 weeks</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step-row">
+        <div class="step-num-col"><span class="step-num-label">06</span></div>
+        <div class="step-content">
+          <div class="step-main">
+            <div class="step-tag">The main event</div>
+            <h3>Professional installation</h3>
+            <p>Our skilled team arrives on the scheduled date. We work professionally, maintain a clean site with daily cleanup, and keep you updated throughout. The 40% progress payment is due on commencement.</p>
+          </div>
+          <ul class="step-detail-list">
+            <li class="step-detail-item">Skilled team arrives on scheduled date</li>
+            <li class="step-detail-item">Dust sheets protect floors and surroundings</li>
+            <li class="step-detail-item">Daily site cleanup at end of each day</li>
+            <li class="step-detail-item">40% progress payment due on start</li>
+            <li class="step-detail-item">You're updated on progress throughout</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step-row highlight">
+        <div class="step-num-col"><span class="step-num-label">07</span></div>
+        <div class="step-content">
+          <div class="step-main">
+            <div class="step-tag">Key milestone</div>
+            <h3><span>Final inspection</span> & sign-off</h3>
+            <p>Inspect the completed work together. Any adjustments are raised and resolved before you sign off. Final 10% payment due on completion. We don't disappear — we're here if you ever need us.</p>
+          </div>
+          <ul class="step-detail-list">
+            <li class="step-detail-item">Full walkthrough and inspection together</li>
+            <li class="step-detail-item">Any adjustments raised and resolved on the spot</li>
+            <li class="step-detail-item">Final 10% payment due on sign-off</li>
+            <li class="step-detail-item">Thorough site cleanup and waste removal</li>
+            <li class="step-detail-item">After-sales support — we're here if you need us</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="timeline-bar">
+  <div class="timeline-inner">
+    <div class="timeline-label">Typical timelines by project type</div>
+    <div class="timeline-items">
+      <div class="timeline-item">
+        <div class="tl-range">1–2 days</div>
+        <div class="tl-label">Small vanity</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-range">2–3 days</div>
+        <div class="tl-label">Standard wardrobe (3–4m)</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-range">3–5 days</div>
+        <div class="tl-label">Medium kitchen (5–7m)</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-range">5–7 days</div>
+        <div class="tl-label">Large kitchen (8m+)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="process-cta">
+  <h2>Ready to get started?</h2>
+  <p>From first contact to installation is typically 2–4 weeks. Let's begin.</p>
+  <div class="btn-group">
+    <a href="contact.html" class="btn btn-white">Contact Us</a>
+    <a href="pricing.html" class="btn btn-outline-light">View Pricing</a>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="components.js"></script>
+</body>
+</html>
