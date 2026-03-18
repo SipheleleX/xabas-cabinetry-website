@@ -27,9 +27,9 @@ const FOOTER_HTML = `
       <a href="index.html" class="footer-logo">Xaba's Cabinetry (Pty) Ltd</a>
       <p>Transforming Gauteng homes with custom built-in cabinetry since 2009. Transparent pricing, quality craftsmanship, professional installation.</p>
       <div class="footer-social">
-        <a href="#" aria-label="TikTok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="#" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@xabacabinetry" aria-label="TikTok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/xabas_cabinets" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1FQtFLCG2L/" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
       </div>
     </div>
     <div class="footer-col">
