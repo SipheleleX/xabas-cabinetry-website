@@ -37,6 +37,7 @@ body {
   background: var(--stone);
   color: var(--ink);
   line-height: 1.6;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -47,7 +48,7 @@ button { cursor: pointer; font-family: var(--font); border: none; background: no
 /* --- UTILITY --- */
 .container { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem; }
 .label {
-  font-size: 8px; letter-spacing: 3px; text-transform: uppercase;
+  font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
   color: var(--ash); display: flex; align-items: center; gap: 12px;
 }
 .label::before { content: ''; display: block; width: 6px; height: 6px; background: var(--amber); opacity: 0.8; flex-shrink: 0; }
@@ -56,8 +57,8 @@ button { cursor: pointer; font-family: var(--font); border: none; background: no
 
 /* --- BUTTONS --- */
 .btn {
-  display: inline-block; font-size: 9px; letter-spacing: 2px;
-  text-transform: uppercase; padding: 10px 20px; transition: all 0.2s ease;
+  display: inline-block; font-size: 11px; letter-spacing: 2px;
+  text-transform: uppercase; padding: 12px 24px; transition: all 0.2s ease;
 }
 .btn-amber { background: var(--amber); color: var(--white); }
 .btn-amber:hover { background: var(--amber-dark); }
@@ -83,22 +84,22 @@ button { cursor: pointer; font-family: var(--font); border: none; background: no
   width: 100%; display: flex; justify-content: space-between; align-items: center;
 }
 .nav-logo {
-  font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+  font-size: 13px; letter-spacing: 4px; text-transform: uppercase;
   color: var(--ink); font-weight: 300; text-decoration: none;
 }
 .nav-links { display: flex; align-items: center; gap: 0; list-style: none; }
 .nav-links li a {
-  font-size: 8px; letter-spacing: 2px; text-transform: uppercase;
-  color: var(--ash); padding: 8px 14px; border-left: 0.5px solid var(--stone-dark);
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--ash); padding: 8px 16px; border-left: 0.5px solid var(--stone-dark);
   display: block; transition: color 0.2s; font-weight: 300;
 }
 .nav-links li:first-child a { border-left: none; }
 .nav-links li a:hover { color: var(--ink); }
 .nav-links li a.active { color: var(--amber); }
 .nav-cta {
-  font-size: 8px; letter-spacing: 2px; text-transform: uppercase;
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
   background: var(--amber); color: var(--white) !important;
-  padding: 8px 18px !important; border-left: none !important;
+  padding: 9px 20px !important; border-left: none !important;
   margin-left: 14px; transition: background 0.2s !important;
 }
 .nav-cta:hover { background: var(--amber-dark) !important; color: var(--white) !important; }
@@ -131,18 +132,18 @@ button { cursor: pointer; font-family: var(--font); border: none; background: no
   margin-bottom: 1rem;
 }
 .page-hero-eyebrow span {
-  font-size: 8px; letter-spacing: 3px; text-transform: uppercase;
+  font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
   color: var(--amber);
 }
 .page-hero-eyebrow::before {
   content: ''; display: block; width: 20px; height: 1px; background: var(--amber);
 }
 .page-hero h1 {
-  font-size: clamp(2rem, 4vw, 3.2rem); color: var(--white);
+  font-size: clamp(2.2rem, 4vw, 3.4rem); color: var(--white);
   font-weight: 200; letter-spacing: 1px; text-transform: uppercase;
   line-height: 1.15; margin-bottom: 1rem;
 }
-.page-hero p { font-size: 0.9rem; color: var(--mist); letter-spacing: 0.3px; max-width: 600px; }
+.page-hero p { font-size: 1rem; color: var(--mist); letter-spacing: 0.3px; max-width: 600px; }
 
 /* ============================================
    FOOTER
@@ -156,37 +157,37 @@ footer {
   display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem;
 }
 .footer-brand .footer-logo {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  font-size: 12px; letter-spacing: 3px; text-transform: uppercase;
   color: var(--white); font-weight: 300; display: block; margin-bottom: 0.75rem;
 }
 .footer-brand p {
-  font-size: 9px; color: var(--mist); line-height: 1.7;
+  font-size: 12px; color: var(--mist); line-height: 1.7;
   letter-spacing: 0.3px; margin-bottom: 1.25rem;
 }
 .footer-social { display: flex; gap: 10px; }
 .footer-social a {
-  width: 32px; height: 32px; border: 0.5px solid var(--ink-light);
+  width: 34px; height: 34px; border: 0.5px solid var(--ink-light);
   display: flex; align-items: center; justify-content: center;
-  color: var(--ash); transition: all 0.2s; font-size: 13px;
+  color: var(--ash); transition: all 0.2s; font-size: 14px;
 }
 .footer-social a:hover { border-color: var(--amber); color: var(--amber); }
 .footer-col h4 {
-  font-size: 8px; letter-spacing: 3px; text-transform: uppercase;
+  font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
   color: var(--amber); font-weight: 400; margin-bottom: 1rem;
 }
 .footer-col ul { list-style: none; }
 .footer-col ul li { margin-bottom: 0.6rem; }
 .footer-col ul li a {
-  font-size: 9px; color: var(--ash); letter-spacing: 0.5px;
+  font-size: 12px; color: var(--ash); letter-spacing: 0.5px;
   transition: color 0.2s;
 }
 .footer-col ul li a:hover { color: var(--white); }
 .footer-contact-item {
   display: flex; align-items: flex-start; gap: 8px; margin-bottom: 0.75rem;
 }
-.footer-contact-item .fc-icon { color: var(--amber); font-size: 11px; margin-top: 1px; flex-shrink: 0; }
+.footer-contact-item .fc-icon { color: var(--amber); font-size: 12px; margin-top: 1px; flex-shrink: 0; }
 .footer-contact-item a, .footer-contact-item span {
-  font-size: 9px; color: var(--ash); letter-spacing: 0.3px;
+  font-size: 12px; color: var(--ash); letter-spacing: 0.3px;
 }
 .footer-contact-item a:hover { color: var(--white); }
 .footer-bottom {
@@ -196,7 +197,7 @@ footer {
   display: flex; justify-content: space-between; align-items: center;
 }
 .footer-bottom p {
-  font-size: 8px; color: #3a3835; letter-spacing: 1px; text-transform: uppercase;
+  font-size: 11px; color: #3a3835; letter-spacing: 1px; text-transform: uppercase;
 }
 .footer-bottom a { color: #3a3835; transition: color 0.2s; }
 .footer-bottom a:hover { color: var(--amber); }
